@@ -1,0 +1,1710 @@
+[  9880.438] 
+X.Org X Server 1.21.1.11
+X Protocol Version 11, Revision 0
+[  9880.440] Current Operating System: Linux gentle 6.6.13-gentoo-dist #1 SMP PREEMPT_DYNAMIC Sat Jan 20 14:30:33 -00 2024 x86_64
+[  9880.440] Kernel command line: BOOT_IMAGE=/vmlinuz-6.6.13-gentoo-dist root=UUID=ca186c40-d03e-46e9-8b06-8707f61c6b46 ro
+[  9880.442]  
+[  9880.449] Current version of pixman: 0.43.2
+[  9880.451] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[  9880.451] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[  9880.453] (==) Log file: "/home/pinkhorse/.local/share/xorg/Xorg.2.log", Time: Mon Feb 19 21:41:29 2024
+[  9880.458] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[  9880.462] (==) No Layout section.  Using the first Screen section.
+[  9880.462] (==) No screen section available. Using defaults.
+[  9880.462] (**) |-->Screen "Default Screen Section" (0)
+[  9880.462] (**) |   |-->Monitor "<default monitor>"
+[  9880.462] (==) No monitor specified for screen "Default Screen Section".
+	Using a default monitor configuration.
+[  9880.462] (==) Automatically adding devices
+[  9880.462] (==) Automatically enabling devices
+[  9880.462] (==) Automatically adding GPU devices
+[  9880.462] (==) Automatically binding GPU devices
+[  9880.462] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[  9880.462] (WW) The directory "/usr/share/fonts/misc" does not exist.
+[  9880.462] 	Entry deleted from font path.
+[  9880.463] (WW) The directory "/usr/share/fonts/TTF" does not exist.
+[  9880.463] 	Entry deleted from font path.
+[  9880.463] (WW) The directory "/usr/share/fonts/OTF" does not exist.
+[  9880.463] 	Entry deleted from font path.
+[  9880.463] (WW) The directory "/usr/share/fonts/Type1" does not exist.
+[  9880.463] 	Entry deleted from font path.
+[  9880.463] (WW) The directory "/usr/share/fonts/100dpi" does not exist.
+[  9880.463] 	Entry deleted from font path.
+[  9880.463] (WW) The directory "/usr/share/fonts/75dpi" does not exist.
+[  9880.463] 	Entry deleted from font path.
+[  9880.463] (==) FontPath set to:
+	
+[  9880.463] (==) ModulePath set to "/usr/lib64/xorg/modules"
+[  9880.463] (II) The server relies on udev to provide the list of input devices.
+	If no devices become available, reconfigure udev or disable AutoAddDevices.
+[  9880.463] (II) Module ABI versions:
+[  9880.463] 	X.Org ANSI C Emulation: 0.4
+[  9880.463] 	X.Org Video Driver: 25.2
+[  9880.463] 	X.Org XInput driver : 24.4
+[  9880.463] 	X.Org Server Extension : 10.0
+[  9880.463] (++) using VT number 2
+
+[  9880.467] (II) systemd-logind: took control of session /org/freedesktop/login1/session/_33
+[  9880.468] (II) xfree86: Adding drm device (/dev/dri/card0)
+[  9880.468] (II) Platform probe for /sys/devices/pci0000:00/0000:00:02.0/drm/card0
+[  9880.469] (II) systemd-logind: got fd for /dev/dri/card0 226:0 fd 11 paused 0
+[  9880.471] (--) PCI:*(0@0:2:0) 15ad:0405:15ad:0405 rev 0, Mem @ 0xe0000000/16777216, 0xe1400000/2097152, I/O @ 0x0000c170/16, BIOS @ 0x????????/131072
+[  9880.471] (II) LoadModule: "glx"
+[  9880.472] LoaderOpen(/usr/lib64/xorg/modules/extensions/libglx.so)
+[  9880.472] (II) Loading /usr/lib64/xorg/modules/extensions/libglx.so
+[  9880.473] (II) Module glx: vendor="X.Org Foundation"
+[  9880.473] 	compiled for 1.21.1.11, module version = 1.0.0
+[  9880.473] 	ABI class: X.Org Server Extension, version 10.0
+[  9880.473] (==) Matched vmware as autoconfigured driver 0
+[  9880.473] (==) Matched modesetting as autoconfigured driver 1
+[  9880.473] (==) Matched fbdev as autoconfigured driver 2
+[  9880.473] (==) Matched vesa as autoconfigured driver 3
+[  9880.473] (==) Assigned the driver to the xf86ConfigLayout
+[  9880.473] (II) LoadModule: "vmware"
+[  9880.473] LoaderOpen(/usr/lib64/xorg/modules/drivers/vmware_drv.so)
+[  9880.473] (II) Loading /usr/lib64/xorg/modules/drivers/vmware_drv.so
+[  9880.488] (II) Module vmware: vendor="X.Org Foundation"
+[  9880.488] 	compiled for 1.21.1.11, module version = 13.4.0
+[  9880.488] 	Module class: X.Org Video Driver
+[  9880.488] 	ABI class: X.Org Video Driver, version 25.2
+[  9880.488] (II) LoadModule: "modesetting"
+[  9880.488] LoaderOpen(/usr/lib64/xorg/modules/drivers/modesetting_drv.so)
+[  9880.488] (II) Loading /usr/lib64/xorg/modules/drivers/modesetting_drv.so
+[  9880.489] (II) Module modesetting: vendor="X.Org Foundation"
+[  9880.489] 	compiled for 1.21.1.11, module version = 1.21.1
+[  9880.489] 	Module class: X.Org Video Driver
+[  9880.489] 	ABI class: X.Org Video Driver, version 25.2
+[  9880.489] (II) LoadModule: "fbdev"
+[  9880.489] LoaderOpen(/usr/lib64/xorg/modules/drivers/fbdev_drv.so)
+[  9880.489] (II) Loading /usr/lib64/xorg/modules/drivers/fbdev_drv.so
+[  9880.489] (II) Module fbdev: vendor="X.Org Foundation"
+[  9880.489] 	compiled for 1.21.1.11, module version = 0.5.0
+[  9880.489] 	Module class: X.Org Video Driver
+[  9880.489] 	ABI class: X.Org Video Driver, version 25.2
+[  9880.489] (II) LoadModule: "vesa"
+[  9880.489] LoaderOpen(/usr/lib64/xorg/modules/drivers/vesa_drv.so)
+[  9880.489] (II) Loading /usr/lib64/xorg/modules/drivers/vesa_drv.so
+[  9880.489] (II) Module vesa: vendor="X.Org Foundation"
+[  9880.489] 	compiled for 1.21.1.11, module version = 2.6.0
+[  9880.489] 	Module class: X.Org Video Driver
+[  9880.489] 	ABI class: X.Org Video Driver, version 25.2
+[  9880.489] (II) vmware: driver for VMware SVGA: vmware0405, vmware0710
+[  9880.489] (II) modesetting: Driver for Modesetting Kernel Drivers: kms
+[  9880.489] (II) FBDEV: driver for framebuffer: fbdev
+[  9880.489] (II) VESA: driver for VESA chipsets: vesa
+[  9880.490] xf86EnableIO: failed to enable I/O ports 0000-03ff (Operation not permitted)
+[  9880.490] (WW) Falling back to old probe method for modesetting
+[  9880.490] (WW) Falling back to old probe method for fbdev
+[  9880.490] (II) Loading sub module "fbdevhw"
+[  9880.490] (II) LoadModule: "fbdevhw"
+[  9880.490] LoaderOpen(/usr/lib64/xorg/modules/libfbdevhw.so)
+[  9880.490] (II) Loading /usr/lib64/xorg/modules/libfbdevhw.so
+[  9880.490] (II) Module fbdevhw: vendor="X.Org Foundation"
+[  9880.490] 	compiled for 1.21.1.11, module version = 0.0.2
+[  9880.490] 	ABI class: X.Org Video Driver, version 25.2
+[  9880.490] (WW) VGA arbiter: cannot open kernel arbiter, no multi-card support
+[  9880.490] (II) vmware(0): Creating default Display subsection in Screen section
+	"Default Screen Section" for depth/fbbpp 24/32
+[  9880.490] (--) vmware(0): DRM driver version is 2.20.0
+[  9880.490] (==) vmware(0): Depth 24, (--) framebuffer bpp 32
+[  9880.490] (==) vmware(0): RGB weight 888
+[  9880.490] (==) vmware(0): Default visual is TrueColor
+[  9880.490] (--) vmware(0): Min width 1, Max Width 16384.
+[  9880.490] (--) vmware(0): Min height 1, Max Height 16384.
+[  9880.490] (II) vmware(0): Output Virtual1 has no monitor section
+[  9880.490] (II) vmware(0): Output Virtual2 has no monitor section
+[  9880.490] (II) vmware(0): Output Virtual3 has no monitor section
+[  9880.491] (II) vmware(0): Output Virtual4 has no monitor section
+[  9880.491] (II) vmware(0): Output Virtual5 has no monitor section
+[  9880.491] (II) vmware(0): Output Virtual6 has no monitor section
+[  9880.491] (II) vmware(0): Output Virtual7 has no monitor section
+[  9880.491] (II) vmware(0): Output Virtual8 has no monitor section
+[  9880.491] (II) vmware(0): Printing probed modes for output Virtual1
+[  9880.491] (II) vmware(0): Modeline "1280x800"x60.0   81.51  1280 1330 1380 1430  800 850 900 950 -hsync +vsync (57.0 kHz eP)
+[  9880.491] (II) vmware(0): Modeline "1920x1440"x60.0  234.00  1920 2048 2256 2600  1440 1441 1444 1500 -hsync +vsync (90.0 kHz e)
+[  9880.491] (II) vmware(0): Modeline "1856x1392"x60.0  218.25  1856 1952 2176 2528  1392 1393 1396 1439 -hsync +vsync (86.3 kHz e)
+[  9880.491] (II) vmware(0): Modeline "1792x1344"x60.0  204.75  1792 1920 2120 2448  1344 1345 1348 1394 -hsync +vsync (83.6 kHz e)
+[  9880.491] (II) vmware(0): Modeline "1920x1200"x59.9  193.25  1920 2056 2256 2592  1200 1203 1209 1245 -hsync +vsync (74.6 kHz e)
+[  9880.491] (II) vmware(0): Modeline "1920x1080"x60.0  173.00  1920 2048 2248 2576  1080 1083 1088 1120 -hsync +vsync (67.2 kHz e)
+[  9880.491] (II) vmware(0): Modeline "1600x1200"x60.0  162.00  1600 1664 1856 2160  1200 1201 1204 1250 +hsync +vsync (75.0 kHz e)
+[  9880.491] (II) vmware(0): Modeline "1680x1050"x60.0  146.25  1680 1784 1960 2240  1050 1053 1059 1089 -hsync +vsync (65.3 kHz e)
+[  9880.491] (II) vmware(0): Modeline "1400x1050"x60.0  121.75  1400 1488 1632 1864  1050 1053 1057 1089 -hsync +vsync (65.3 kHz e)
+[  9880.491] (II) vmware(0): Modeline "1280x1024"x60.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[  9880.491] (II) vmware(0): Modeline "1440x900"x59.9  106.50  1440 1520 1672 1904  900 903 909 934 -hsync +vsync (55.9 kHz e)
+[  9880.491] (II) vmware(0): Modeline "1280x960"x60.0  108.00  1280 1376 1488 1800  960 961 964 1000 +hsync +vsync (60.0 kHz e)
+[  9880.491] (II) vmware(0): Modeline "1360x768"x60.0   85.50  1360 1424 1536 1792  768 771 777 795 +hsync +vsync (47.7 kHz e)
+[  9880.491] (II) vmware(0): Modeline "1280x800"x59.8   83.50  1280 1352 1480 1680  800 803 809 831 +hsync -vsync (49.7 kHz e)
+[  9880.491] (II) vmware(0): Modeline "1152x864"x75.0  108.00  1152 1216 1344 1600  864 865 868 900 +hsync +vsync (67.5 kHz e)
+[  9880.491] (II) vmware(0): Modeline "1280x768"x59.9   79.50  1280 1344 1472 1664  768 771 778 798 -hsync +vsync (47.8 kHz e)
+[  9880.491] (II) vmware(0): Modeline "1280x720"x59.9   74.50  1280 1344 1472 1664  720 723 728 748 -hsync +vsync (44.8 kHz e)
+[  9880.491] (II) vmware(0): Modeline "1024x768"x60.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[  9880.491] (II) vmware(0): Modeline "800x600"x60.3   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[  9880.491] (II) vmware(0): Modeline "640x480"x59.9   25.18  640 656 752 800  480 489 492 525 -hsync -vsync (31.5 kHz e)
+[  9880.491] (II) vmware(0): EDID for output Virtual2
+[  9880.491] (II) vmware(0): EDID for output Virtual3
+[  9880.491] (II) vmware(0): EDID for output Virtual4
+[  9880.491] (II) vmware(0): EDID for output Virtual5
+[  9880.491] (II) vmware(0): EDID for output Virtual6
+[  9880.491] (II) vmware(0): EDID for output Virtual7
+[  9880.491] (II) vmware(0): EDID for output Virtual8
+[  9880.491] (II) vmware(0): Output Virtual1 connected
+[  9880.491] (II) vmware(0): Output Virtual2 disconnected
+[  9880.491] (II) vmware(0): Output Virtual3 disconnected
+[  9880.491] (II) vmware(0): Output Virtual4 disconnected
+[  9880.491] (II) vmware(0): Output Virtual5 disconnected
+[  9880.491] (II) vmware(0): Output Virtual6 disconnected
+[  9880.491] (II) vmware(0): Output Virtual7 disconnected
+[  9880.491] (II) vmware(0): Output Virtual8 disconnected
+[  9880.491] (II) vmware(0): Using exact sizes for initial modes
+[  9880.491] (II) vmware(0): Output Virtual1 using initial mode 1280x800 +0+0
+[  9880.491] (==) vmware(0): DPI set to (96, 96)
+[  9880.491] (==) vmware(0): Using gamma correction (1.0, 1.0, 1.0)
+[  9880.491] (II) Loading sub module "fb"
+[  9880.491] (II) LoadModule: "fb"
+[  9880.491] (II) Module "fb" already built-in
+[  9880.491] (II) Loading sub module "dri2"
+[  9880.491] (II) LoadModule: "dri2"
+[  9880.491] (II) Module "dri2" already built-in
+[  9880.491] (II) Loading sub module "dri3"
+[  9880.491] (II) LoadModule: "dri3"
+[  9880.491] (II) Module "dri3" already built-in
+[  9880.491] (II) UnloadModule: "modesetting"
+[  9880.491] (II) Unloading modesetting
+[  9880.491] (II) UnloadModule: "fbdev"
+[  9880.491] (II) Unloading fbdev
+[  9880.491] (II) UnloadSubModule: "fbdevhw"
+[  9880.491] (II) Unloading fbdevhw
+[  9880.491] (II) UnloadModule: "vesa"
+[  9880.491] (II) Unloading vesa
+[  9880.492] (II) vmware(0): Initialized VMWARE_CTRL extension version 0.2
+[  9880.497] (II) vmware(0): Gallium3D XA version: 2.5.0.
+[  9880.497] (II) vmware(0): Path of drm device is "/dev/dri/card0".
+[  9880.497] (II) vmware(0): [DRI2] Setup complete
+[  9880.497] (II) vmware(0): [DRI2]   DRI driver: vmwgfx
+[  9880.502] (--) vmware(0): Render acceleration is enabled.
+[  9880.502] (==) vmware(0): Rendercheck mode is disabled.
+[  9880.502] (--) vmware(0): Direct rendering (DRI2 3D) is enabled.
+[  9880.502] (--) vmware(0): Direct rendering (DRI3 3D) is enabled.
+[  9880.502] (==) vmware(0): Direct presents are disabled.
+[  9880.502] (==) vmware(0): Hardware only presents are automatic per scanout.
+[  9880.502] (==) vmware(0): Backing store enabled
+[  9880.502] (==) vmware(0): Silken mouse enabled
+[  9880.503] (==) vmware(0): DPMS enabled
+[  9880.503] (II) Initializing extension Generic Event Extension
+[  9880.503] (II) Initializing extension SHAPE
+[  9880.503] (II) Initializing extension MIT-SHM
+[  9880.504] (II) Initializing extension XInputExtension
+[  9880.504] (II) Initializing extension XTEST
+[  9880.504] (II) Initializing extension BIG-REQUESTS
+[  9880.504] (II) Initializing extension SYNC
+[  9880.505] (II) Initializing extension XKEYBOARD
+[  9880.505] (II) Initializing extension XC-MISC
+[  9880.505] (II) Initializing extension SECURITY
+[  9880.505] (II) Initializing extension XFIXES
+[  9880.505] (II) Initializing extension RENDER
+[  9880.506] (II) Initializing extension RANDR
+[  9880.506] (II) Initializing extension COMPOSITE
+[  9880.506] (II) Initializing extension DAMAGE
+[  9880.507] (II) Initializing extension MIT-SCREEN-SAVER
+[  9880.507] (II) Initializing extension DOUBLE-BUFFER
+[  9880.507] (II) Initializing extension RECORD
+[  9880.507] (II) Initializing extension DPMS
+[  9880.507] (II) Initializing extension Present
+[  9880.508] (II) Initializing extension DRI3
+[  9880.508] (II) Initializing extension X-Resource
+[  9880.508] (II) Initializing extension XVideo
+[  9880.508] (II) Initializing extension XVideo-MotionCompensation
+[  9880.508] (II) Initializing extension SELinux
+[  9880.508] (II) SELinux: Disabled on system
+[  9880.508] (II) Initializing extension GLX
+[  9880.519] (II) AIGLX: Loaded and initialized vmwgfx
+[  9880.519] (II) GLX: Initialized DRI2 GL provider for screen 0
+[  9880.519] (II) Initializing extension XFree86-VidModeExtension
+[  9880.519] XFree86VidModeExtensionInitVidModeAddExtension
+[  9880.519] (II) Initializing extension XFree86-DGA
+[  9880.519] (II) Initializing extension XFree86-DRI
+[  9880.519] (II) Initializing extension DRI2
+[  9880.523] (II) vmware(0): Setting screen physical size to 338 x 211
+[  9880.527] Popen: `"/usr/bin/xkbcomp" -w 1 "-R/usr/share/X11/xkb" -xkm "-" -em1 "The XKEYBOARD keymap compiler (xkbcomp) reports:" -emp "> " -eml "Errors from xkbcomp are not fatal to the X server" "/tmp/server-2.xkm"', fp = 0x564786004250
+[  9880.527] Pclose: fp = 0x564786004250
+[  9880.558] Loaded XKB keymap /tmp/server-2.xkm, defined=0x7f
+[  9880.586] (II) config/udev: Adding input device Power Button (/dev/input/event0)
+[  9880.587] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[  9880.587] (II) LoadModule: "libinput"
+[  9880.587] LoaderOpen(/usr/lib64/xorg/modules/input/libinput_drv.so)
+[  9880.587] (II) Loading /usr/lib64/xorg/modules/input/libinput_drv.so
+[  9880.587] (II) Module libinput: vendor="X.Org Foundation"
+[  9880.587] 	compiled for 1.21.1.11, module version = 1.4.0
+[  9880.587] 	Module class: X.Org XInput Driver
+[  9880.587] 	ABI class: X.Org XInput driver, version 24.4
+[  9880.587] (II) Using input driver 'libinput' for 'Power Button'
+[  9880.588] (II) systemd-logind: got fd for /dev/input/event0 13:64 fd 23 paused 0
+[  9880.588] (**) Power Button: always reports core events
+[  9880.588] (**) Option "Device" "/dev/input/event0"
+[  9880.591] FlushingSerial
+[  9880.592] (II) event0  - Power Button: is tagged by udev as: Keyboard
+[  9880.592] (II) event0  - Power Button: device is a keyboard
+[  9880.592] (II) event0  - Power Button: device removed
+[  9880.592] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXPWRBN:00/input/input0/event0"
+[  9880.592] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 6)
+[  9880.593] FlushingSerial
+[  9880.594] (II) event0  - Power Button: is tagged by udev as: Keyboard
+[  9880.594] (II) event0  - Power Button: device is a keyboard
+[  9880.594] input-thread: registered device 22
+[  9880.595] (II) config/udev: Adding input device Sleep Button (/dev/input/event1)
+[  9880.595] (**) Sleep Button: Applying InputClass "libinput keyboard catchall"
+[  9880.595] (II) Using input driver 'libinput' for 'Sleep Button'
+[  9880.596] (II) systemd-logind: got fd for /dev/input/event1 13:65 fd 26 paused 0
+[  9880.596] (**) Sleep Button: always reports core events
+[  9880.596] (**) Option "Device" "/dev/input/event1"
+[  9880.596] FlushingSerial
+[  9880.597] (II) event1  - Sleep Button: is tagged by udev as: Keyboard
+[  9880.597] (II) event1  - Sleep Button: device is a keyboard
+[  9880.598] (II) event1  - Sleep Button: device removed
+[  9880.598] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSLPBN:00/input/input1/event1"
+[  9880.598] (II) XINPUT: Adding extended input device "Sleep Button" (type: KEYBOARD, id 7)
+[  9880.598] FlushingSerial
+[  9880.599] (II) event1  - Sleep Button: is tagged by udev as: Keyboard
+[  9880.599] (II) event1  - Sleep Button: device is a keyboard
+[  9880.601] (II) config/udev: Adding input device Video Bus (/dev/input/event5)
+[  9880.601] (**) Video Bus: Applying InputClass "libinput keyboard catchall"
+[  9880.601] (II) Using input driver 'libinput' for 'Video Bus'
+[  9880.602] (II) systemd-logind: got fd for /dev/input/event5 13:69 fd 27 paused 0
+[  9880.602] (**) Video Bus: always reports core events
+[  9880.602] (**) Option "Device" "/dev/input/event5"
+[  9880.602] FlushingSerial
+[  9880.603] (II) event5  - Video Bus: is tagged by udev as: Keyboard
+[  9880.603] (II) event5  - Video Bus: device is a keyboard
+[  9880.604] (II) event5  - Video Bus: device removed
+[  9880.604] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A03:00/LNXVIDEO:00/input/input6/event5"
+[  9880.604] (II) XINPUT: Adding extended input device "Video Bus" (type: KEYBOARD, id 8)
+[  9880.604] FlushingSerial
+[  9880.605] (II) event5  - Video Bus: is tagged by udev as: Keyboard
+[  9880.605] (II) event5  - Video Bus: device is a keyboard
+[  9880.607] (II) config/udev: Adding input device VirtualBox USB Tablet (/dev/input/event4)
+[  9880.607] (**) VirtualBox USB Tablet: Applying InputClass "libinput pointer catchall"
+[  9880.607] (II) Using input driver 'libinput' for 'VirtualBox USB Tablet'
+[  9880.609] (II) systemd-logind: got fd for /dev/input/event4 13:68 fd 28 paused 0
+[  9880.609] (**) VirtualBox USB Tablet: always reports core events
+[  9880.609] (**) Option "Device" "/dev/input/event4"
+[  9880.609] FlushingSerial
+[  9880.611] (II) event4  - VirtualBox USB Tablet: is tagged by udev as: Mouse
+[  9880.612] (II) event4  - VirtualBox USB Tablet: device is a pointer
+[  9880.612] (II) event4  - VirtualBox USB Tablet: device removed
+[  9880.612] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:06.0/usb2/2-1/2-1:1.0/0003:80EE:0021.0001/input/input5/event4"
+[  9880.612] (II) XINPUT: Adding extended input device "VirtualBox USB Tablet" (type: MOUSE, id 9)
+[  9880.612] (**) Option "AccelerationScheme" "none"
+[  9880.612] (**) VirtualBox USB Tablet: (accel) selected scheme none/0
+[  9880.612] (**) VirtualBox USB Tablet: (accel) acceleration factor: 2.000
+[  9880.612] (**) VirtualBox USB Tablet: (accel) acceleration threshold: 4
+[  9880.613] FlushingSerial
+[  9880.614] (II) event4  - VirtualBox USB Tablet: is tagged by udev as: Mouse
+[  9880.615] (II) event4  - VirtualBox USB Tablet: device is a pointer
+[  9880.616] (II) config/udev: Adding input device VirtualBox USB Tablet (/dev/input/js0)
+[  9880.616] (II) No input driver specified, ignoring this device.
+[  9880.616] (II) This device may have been added with another device file.
+[  9880.617] (II) config/udev: Adding input device VirtualBox USB Tablet (/dev/input/mouse1)
+[  9880.617] (II) No input driver specified, ignoring this device.
+[  9880.617] (II) This device may have been added with another device file.
+[  9880.618] (II) config/udev: Adding input device AT Translated Set 2 keyboard (/dev/input/event2)
+[  9880.618] (**) AT Translated Set 2 keyboard: Applying InputClass "libinput keyboard catchall"
+[  9880.618] (II) Using input driver 'libinput' for 'AT Translated Set 2 keyboard'
+[  9880.619] (II) systemd-logind: got fd for /dev/input/event2 13:66 fd 29 paused 0
+[  9880.619] (**) AT Translated Set 2 keyboard: always reports core events
+[  9880.619] (**) Option "Device" "/dev/input/event2"
+[  9880.620] FlushingSerial
+[  9880.621] (II) event2  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[  9880.621] (II) event2  - AT Translated Set 2 keyboard: device is a keyboard
+[  9880.621] (II) event2  - AT Translated Set 2 keyboard: device removed
+[  9880.621] (**) Option "config_info" "udev:/sys/devices/platform/i8042/serio0/input/input2/event2"
+[  9880.621] (II) XINPUT: Adding extended input device "AT Translated Set 2 keyboard" (type: KEYBOARD, id 10)
+[  9880.622] FlushingSerial
+[  9880.623] (II) event2  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[  9880.623] (II) event2  - AT Translated Set 2 keyboard: device is a keyboard
+[  9880.624] (II) config/udev: Adding input device ImExPS/2 Generic Explorer Mouse (/dev/input/event3)
+[  9880.624] (**) ImExPS/2 Generic Explorer Mouse: Applying InputClass "libinput pointer catchall"
+[  9880.624] (II) Using input driver 'libinput' for 'ImExPS/2 Generic Explorer Mouse'
+[  9880.624] (II) systemd-logind: got fd for /dev/input/event3 13:67 fd 30 paused 0
+[  9880.625] (**) ImExPS/2 Generic Explorer Mouse: always reports core events
+[  9880.625] (**) Option "Device" "/dev/input/event3"
+[  9880.625] FlushingSerial
+[  9880.626] (II) event3  - ImExPS/2 Generic Explorer Mouse: is tagged by udev as: Mouse
+[  9880.626] (II) event3  - ImExPS/2 Generic Explorer Mouse: device is a pointer
+[  9880.626] (II) event3  - ImExPS/2 Generic Explorer Mouse: device removed
+[  9880.626] (II) libinput: ImExPS/2 Generic Explorer Mouse: Step value 0 was provided, libinput Fallback acceleration function is used.
+[  9880.626] (II) libinput: ImExPS/2 Generic Explorer Mouse: Step value 0 was provided, libinput Fallback acceleration function is used.
+[  9880.626] (II) libinput: ImExPS/2 Generic Explorer Mouse: Step value 0 was provided, libinput Fallback acceleration function is used.
+[  9880.626] (**) Option "config_info" "udev:/sys/devices/platform/i8042/serio1/input/input4/event3"
+[  9880.626] (II) XINPUT: Adding extended input device "ImExPS/2 Generic Explorer Mouse" (type: MOUSE, id 11)
+[  9880.626] (**) Option "AccelerationScheme" "none"
+[  9880.627] (**) ImExPS/2 Generic Explorer Mouse: (accel) selected scheme none/0
+[  9880.627] (**) ImExPS/2 Generic Explorer Mouse: (accel) acceleration factor: 2.000
+[  9880.627] (**) ImExPS/2 Generic Explorer Mouse: (accel) acceleration threshold: 4
+[  9880.627] FlushingSerial
+[  9880.627] (II) event3  - ImExPS/2 Generic Explorer Mouse: is tagged by udev as: Mouse
+[  9880.628] (II) event3  - ImExPS/2 Generic Explorer Mouse: device is a pointer
+[  9880.628] (II) config/udev: Adding input device ImExPS/2 Generic Explorer Mouse (/dev/input/mouse0)
+[  9880.628] (II) No input driver specified, ignoring this device.
+[  9880.628] (II) This device may have been added with another device file.
+[  9880.629] (II) config/udev: Adding input device PC Speaker (/dev/input/event6)
+[  9880.629] (II) No input driver specified, ignoring this device.
+[  9880.629] (II) This device may have been added with another device file.
+[  9880.637] client(0): Reserved pid(12982).
+[  9880.637] client(0): Reserved cmdname(/usr/libexec/Xorg) and cmdargs(-nolisten tcp -keeptty :2 -auth /tmp/serverauth.5Qk5NaGBxl vt2).
+[  9880.637] input-thread: creating thread
+[  9880.638] input-thread: InputThreadDoWork waiting for devices
+[  9880.638] input-thread: InputThreadDoWork waiting for devices
+[  9880.638] client(200000): Reserved pid(12981).
+[  9880.638] client(200000): Reserved cmdname(xinit) and cmdargs(/home/pinkhorse/.xinitrc -- /etc/X11/xinit/xserverrc :2 -auth /tmp/serverauth.5Qk5NaGBxl).
+[  9880.638] AllocNewConnection: client index = 1, socket fd = 7, local = 1
+[  9880.638] input-thread: InputThreadDoWork waiting for devices
+[  9880.638] input-thread: InputThreadDoWork waiting for devices
+[  9880.645] client(400000): Reserved pid(12985).
+[  9880.645] client(400000): Reserved cmdname(dwm) and cmdargs(NULL).
+[  9880.645] AllocNewConnection: client index = 2, socket fd = 25, local = 1
+[  9882.748] input-thread: InputThreadDoWork waiting for devices
+[  9882.831] input-thread: InputThreadDoWork waiting for devices
+[  9882.949] input-thread: InputThreadDoWork waiting for devices
+[  9882.952] input-thread: InputThreadDoWork waiting for devices
+[  9883.799] input-thread: InputThreadDoWork waiting for devices
+[  9883.964] input-thread: InputThreadDoWork waiting for devices
+[  9884.215] input-thread: InputThreadDoWork waiting for devices
+[  9884.224] input-thread: InputThreadDoWork waiting for devices
+[  9884.224] ProcessActionEvent(100,0x7ffde6b63264)
+[  9884.224] FixKeyState: Key 67 down
+[  9884.224] FixKeyState: Key 67 down
+[  9884.224] xf86VTSwitch()
+[  9884.224] xf86VTSwitch: Leaving, xf86Exiting is FALSE
+[  9884.225] (**) Option "fd" "23"
+[  9884.225] (II) event0  - Power Button: device removed
+[  9884.225] (**) Option "fd" "26"
+[  9884.225] (II) event1  - Sleep Button: device removed
+[  9884.225] (**) Option "fd" "27"
+[  9884.226] (II) event5  - Video Bus: device removed
+[  9884.226] (**) Option "fd" "28"
+[  9884.226] (II) event4  - VirtualBox USB Tablet: device removed
+[  9884.226] (**) Option "fd" "29"
+[  9884.226] (II) event2  - AT Translated Set 2 keyboard: device removed
+[  9884.226] input-thread: unregistered device: 22
+[  9884.226] (**) Option "fd" "30"
+[  9884.226] (II) event3  - ImExPS/2 Generic Explorer Mouse: device removed
+[  9884.226] (II)input-thread: InputThreadDoWork waiting for devices
+[  9884.227]  AIGLX: Suspending AIGLX clients for VT switch
+[  9884.239] (II) systemd-logind: got pause for 13:68
+[  9884.239] (II) systemd-logind: got pause for 13:65
+[  9884.239] (II) systemd-logind: got pause for 13:67
+[  9884.239] (II) systemd-logind: got pause for 13:66
+[  9884.239] (II) systemd-logind: got pause for 13:69
+[  9884.239] (II) systemd-logind: got pause for 13:64
+[  9959.895] xf86VTSwitch()
+[  9959.957] (II) systemd-logind: got resume for 13:68
+[  9959.957] xf86VTSwitch()
+[  9959.988] (II) systemd-logind: got resume for 13:65
+[  9959.988] xf86VTSwitch()
+[  9960.133] (II) systemd-logind: got resume for 13:67
+[  9960.133] (II) systemd-logind: got resume for 226:0
+[  9960.133] xf86VTSwitch: Entering
+[  9960.134] (II) AIGLX: Resuming AIGLX clients after VT switch
+[  9960.141] FlushingSerial
+[  9960.144] (II) event1  - Sleep Button: is tagged by udev as: Keyboard
+[  9960.144] (II) event1  - Sleep Button: device is a keyboard
+[  9960.145] input-thread: registered device 22
+[  9960.146] FlushingSerial
+[  9960.153] (II) event4  - VirtualBox USB Tablet: is tagged by udev as: Mouse
+[  9960.155] (II) event4  - VirtualBox USB Tablet: device is a pointer
+[  9960.157] FlushingSerial
+[  9960.161] (II) event3  - ImExPS/2 Generic Explorer Mouse: is tagged by udev as: Mouse
+[  9960.162] (II) event3  - ImExPS/2 Generic Explorer Mouse: device is a pointer
+[  9960.163] input-thread: InputThreadDoWork waiting for devices
+[  9960.164] (II) systemd-logind: got resume for 13:66
+[  9960.165] FlushingSerial
+[  9960.169] (II) event2  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[  9960.169] (II) event2  - AT Translated Set 2 keyboard: device is a keyboard
+[  9960.171] (!!) vmware(0): New layout.
+[  9960.171] (!!) vmware(0): 0: 0 0 1280 800
+[  9960.171] (!!) vmware(0): 
+[  9960.624] (II) systemd-logind: got resume for 13:69
+[  9960.625] FlushingSerial
+[  9960.626] (II) event5  - Video Bus: is tagged by udev as: Keyboard
+[  9960.627] (II) event5  - Video Bus: device is a keyboard
+[  9960.627] (II) systemd-logind: got resume for 13:64
+[  9960.627] FlushingSerial
+[  9960.628] (II) event0  - Power Button: is tagged by udev as: Keyboard
+[  9960.628] (II) event0  - Power Button: device is a keyboard
+[  9961.668] input-thread: InputThreadDoWork waiting for devices
+[  9961.827] input-thread: InputThreadDoWork waiting for devices
+[  9962.554] input-thread: InputThreadDoWork waiting for devices
+[  9962.757] input-thread: InputThreadDoWork waiting for devices
+[  9962.925] input-thread: InputThreadDoWork waiting for devices
+[  9963.138] input-thread: InputThreadDoWork waiting for devices
+[  9963.337] input-thread: InputThreadDoWork waiting for devices
+[  9963.526] input-thread: InputThreadDoWork waiting for devices
+[  9963.675] input-thread: InputThreadDoWork waiting for devices
+[  9963.728] input-thread: InputThreadDoWork waiting for devices
+[  9963.766] input-thread: InputThreadDoWork waiting for devices
+[  9963.961] input-thread: InputThreadDoWork waiting for devices
+[  9964.093] input-thread: InputThreadDoWork waiting for devices
+[  9964.152] input-thread: InputThreadDoWork waiting for devices
+[  9964.295] input-thread: InputThreadDoWork waiting for devices
+[  9964.295] ProcessActionEvent(100,0x7ffde6b63264)
+[  9964.295] FixKeyState: Key 71 down
+[  9964.295] FixKeyState: Key 71 down
+[  9964.295] xf86VTSwitch()
+[  9964.295] xf86VTSwitch: Leaving, xf86Exiting is FALSE
+[  9964.296] (**) Option "fd" "28"
+[  9964.296] (II) event0  - Power Button: device removed
+[  9964.296] (**) Option "fd" "27"
+[  9964.296] (II) event1  - Sleep Button: device removed
+[  9964.296] (**) Option "fd" "32"
+[  9964.296] (II) event5  - Video Bus: device removed
+[  9964.296] (**) Option "fd" "26"
+[  9964.296] (II) event4  - VirtualBox USB Tablet: device removed
+[  9964.296] (**) Option "fd" "30"
+[  9964.296] (II) event2  - AT Translated Set 2 keyboard: device removed
+[  9964.297] input-thread: unregistered device: 22
+[  9964.297] (**) Option "fd" "29"
+[  9964.297] (II) event3  - ImExPS/2 Generic Explorer Mouse: device removed
+[  9964.297] (II) input-thread: InputThreadDoWork waiting for devices
+[  9964.297] AIGLX: Suspending AIGLX clients for VT switch
+[  9964.321] (II) systemd-logind: got pause for 13:68
+[  9964.321] (II) systemd-logind: got pause for 13:65
+[  9964.321] (II) systemd-logind: got pause for 13:67
+[  9964.321] (II) systemd-logind: got pause for 13:66
+[  9964.321] (II) systemd-logind: got pause for 13:69
+[  9964.321] (II) systemd-logind: got pause for 13:64
+[  9965.767] xf86VTSwitch()
+[  9965.832] (II) systemd-logind: got resume for 13:68
+[  9965.833] xf86VTSwitch()
+[  9965.926] (II) systemd-logind: got resume for 13:65
+[  9965.926] xf86VTSwitch()
+[  9965.951] (II) systemd-logind: got resume for 13:67
+[  9965.951] (II) systemd-logind: got resume for 226:0
+[  9965.951] xf86VTSwitch: Entering
+[  9965.951] (II) AIGLX: Resuming AIGLX clients after VT switch
+[  9965.955] FlushingSerial
+[  9965.959] (II) event1  - Sleep Button: is tagged by udev as: Keyboard
+[  9965.960] (II) event1  - Sleep Button: device is a keyboard
+[  9965.960] input-thread: registered device 22
+[  9965.962] FlushingSerial
+[  9965.969] (II) event4  - VirtualBox USB Tablet: is tagged by udev as: Mouse
+[  9965.971] (II) event4  - VirtualBox USB Tablet: device is a pointer
+[  9965.972] input-thread: InputThreadDoWork waiting for devices
+[  9965.973] FlushingSerial
+[  9965.977] (II) event3  - ImExPS/2 Generic Explorer Mouse: is tagged by udev as: Mouse
+[  9965.978] (II) event3  - ImExPS/2 Generic Explorer Mouse: device is a pointer
+[  9965.979] (II) systemd-logind: got resume for 13:66
+[  9965.980] FlushingSerial
+[  9965.984] (II) event2  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[  9965.984] (II) event2  - AT Translated Set 2 keyboard: device is a keyboard
+[  9965.993] (II) systemd-logind: got resume for 13:69
+[  9965.993] FlushingSerial
+[  9965.995] (II) event5  - Video Bus: is tagged by udev as: Keyboard
+[  9965.995] (II) event5  - Video Bus: device is a keyboard
+[  9966.023] (II) systemd-logind: got resume for 13:64
+[  9966.023] FlushingSerial
+[  9966.025] (II) event0  - Power Button: is tagged by udev as: Keyboard
+[  9966.025] (II) event0  - Power Button: device is a keyboard
+[  9966.889] input-thread: InputThreadDoWork waiting for devices
+[  9967.062] input-thread: InputThreadDoWork waiting for devices
+[  9967.328] input-thread: InputThreadDoWork waiting for devices
+[  9967.464] input-thread: InputThreadDoWork waiting for devices
+[  9967.611] input-thread: InputThreadDoWork waiting for devices
+[  9967.778] input-thread: InputThreadDoWork waiting for devices
+[  9968.081] input-thread: InputThreadDoWork waiting for devices
+[  9968.256] input-thread: InputThreadDoWork waiting for devices
+[  9968.482] input-thread: InputThreadDoWork waiting for devices
+[  9968.665] input-thread: InputThreadDoWork waiting for devices
+[  9968.943] input-thread: InputThreadDoWork waiting for devices
+[  9969.121] input-thread: InputThreadDoWork waiting for devices
+[  9969.496] input-thread: InputThreadDoWork waiting for devices
+[  9969.622] input-thread: InputThreadDoWork waiting for devices
+[  9969.749] input-thread: InputThreadDoWork waiting for devices
+[  9969.835] input-thread: InputThreadDoWork waiting for devices
+[  9969.925] input-thread: InputThreadDoWork waiting for devices
+[  9970.032] input-thread: InputThreadDoWork waiting for devices
+[  9970.165] input-thread: InputThreadDoWork waiting for devices
+[  9970.260] input-thread: InputThreadDoWork waiting for devices
+[  9970.361] input-thread: InputThreadDoWork waiting for devices
+[  9970.374] input-thread: InputThreadDoWork waiting for devices
+[  9970.505] input-thread: InputThreadDoWork waiting for devices
+[  9970.515] input-thread: InputThreadDoWork waiting for devices
+[  9970.766] input-thread: InputThreadDoWork waiting for devices
+[  9970.799] input-thread: InputThreadDoWork waiting for devices
+[  9970.832] input-thread: InputThreadDoWork waiting for devices
+[  9970.866] input-thread: InputThreadDoWork waiting for devices
+[  9970.899] input-thread: InputThreadDoWork waiting for devices
+[  9970.911] input-thread: InputThreadDoWork waiting for devices
+[  9970.911] ProcessActionEvent(100,0x7ffde6b63264)
+[  9970.911] FixKeyState: Key 69 down
+[  9970.911] FixKeyState: Key 69 down
+[  9970.911] xf86VTSwitch()
+[  9970.911] xf86VTSwitch: Leaving, xf86Exiting is FALSE
+[  9970.911] (**) Option "fd" "33"
+[  9970.911] (II) event0  - Power Button: device removed
+[  9970.911] (**) Option "fd" "28"
+[  9970.911] (II) event1  - Sleep Button: device removed
+[  9970.911] (**) Option "fd" "32"
+[  9970.911] (II) event5  - Video Bus: device removed
+[  9970.911] (**) Option "fd" "27"
+[  9970.911] (II) event4  - VirtualBox USB Tablet: device removed
+[  9970.912] (**) Option "fd" "31"
+[  9970.912] (II) event2  - AT Translated Set 2 keyboard: device removed
+[  9970.912] input-thread: unregistered device: 22
+[  9970.912] (**) Option "fd" "30"
+[  9970.912] (II) event3  - ImExPS/2 Generic Explorer Mouse: device removed
+[  9970.912] (II)input-thread: InputThreadDoWork waiting for devices
+[  9970.912]  AIGLX: Suspending AIGLX clients for VT switch
+[  9970.921] (II) systemd-logind: got pause for 13:68
+[  9970.921] (II) systemd-logind: got pause for 13:65
+[  9970.921] (II) systemd-logind: got pause for 13:67
+[  9970.921] (II) systemd-logind: got pause for 13:66
+[  9970.921] (II) systemd-logind: got pause for 13:69
+[  9970.921] (II) systemd-logind: got pause for 13:64
+[  9999.864] xf86VTSwitch()
+[  9999.886] (II) systemd-logind: got resume for 13:68
+[  9999.887] xf86VTSwitch()
+[  9999.981] (II) systemd-logind: got resume for 13:65
+[  9999.981] xf86VTSwitch()
+[ 10000.074] (II) systemd-logind: got resume for 13:67
+[ 10000.074] (II) systemd-logind: got resume for 226:0
+[ 10000.074] xf86VTSwitch: Entering
+[ 10000.074] (II) AIGLX: Resuming AIGLX clients after VT switch
+[ 10000.078] FlushingSerial
+[ 10000.082] (II) event1  - Sleep Button: is tagged by udev as: Keyboard
+[ 10000.082] (II) event1  - Sleep Button: device is a keyboard
+[ 10000.083] input-thread: registered device 22
+[ 10000.084] FlushingSerial
+[ 10000.092] (II) event4  - VirtualBox USB Tablet: is tagged by udev as: Mouse
+[ 10000.094] (II) event4  - VirtualBox USB Tablet: device is a pointer
+[ 10000.097] FlushingSerial
+[ 10000.100] (II) event3  - ImExPS/2 Generic Explorer Mouse: is tagged by udev as: Mouse
+[ 10000.100] (II) event3  - ImExPS/2 Generic Explorer Mouse: device is a pointer
+[ 10000.101] input-thread: InputThreadDoWork waiting for devices
+[ 10000.101] (II) systemd-logind: got resume for 13:66
+[ 10000.101] FlushingSerial
+[ 10000.103] (II) event2  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[ 10000.103] (II) event2  - AT Translated Set 2 keyboard: device is a keyboard
+[ 10000.228] (II) systemd-logind: got resume for 13:69
+[ 10000.229] FlushingSerial
+[ 10000.233] (II) event5  - Video Bus: is tagged by udev as: Keyboard
+[ 10000.234] (II) event5  - Video Bus: device is a keyboard
+[ 10000.277] (II) systemd-logind: got resume for 13:64
+[ 10000.277] FlushingSerial
+[ 10000.279] (II) event0  - Power Button: is tagged by udev as: Keyboard
+[ 10000.279] (II) event0  - Power Button: device is a keyboard
+[ 10001.925] input-thread: InputThreadDoWork waiting for devices
+[ 10002.170] input-thread: InputThreadDoWork waiting for devices
+[ 10002.200] input-thread: InputThreadDoWork waiting for devices
+[ 10002.201] ProcessActionEvent(100,0x7ffde6b63264)
+[ 10002.201] FixKeyState: Key 67 down
+[ 10002.201] FixKeyState: Key 67 down
+[ 10002.201] xf86VTSwitch()
+[ 10002.201] xf86VTSwitch: Leaving, xf86Exiting is FALSE
+[ 10002.201] (**) Option "fd" "34"
+[ 10002.201] (II) event0  - Power Button: device removed
+[ 10002.201] (**) Option "fd" "29"
+[ 10002.201] (II) event1  - Sleep Button: device removed
+[ 10002.202] (**) Option "fd" "33"
+[ 10002.202] (II) event5  - Video Bus: device removed
+[ 10002.202] (**) Option "fd" "28"
+[ 10002.202] (II) event4  - VirtualBox USB Tablet: device removed
+[ 10002.202] (**) Option "fd" "32"
+[ 10002.202] (II) event2  - AT Translated Set 2 keyboard: device removed
+[ 10002.202] input-thread: unregistered device: 22
+[ 10002.202] (**) Option "fd" "31"
+[ 10002.202] (II) event3  - ImExPS/2 Generic Explorer Mouse: device removed
+[ 10002.202] [ 10002.202] (II) AIGLX: Suspending AIGLX clients for VT switch
+input-thread: InputThreadDoWork waiting for devices
+[ 10002.211] (II) systemd-logind: got pause for 13:68
+[ 10002.211] (II) systemd-logind: got pause for 13:65
+[ 10002.211] (II) systemd-logind: got pause for 13:67
+[ 10002.211] (II) systemd-logind: got pause for 13:66
+[ 10002.211] (II) systemd-logind: got pause for 13:69
+[ 10002.211] (II) systemd-logind: got pause for 13:64
+[ 10007.526] xf86VTSwitch()
+[ 10007.569] (II) systemd-logind: got resume for 13:68
+[ 10007.569] xf86VTSwitch()
+[ 10007.593] (II) systemd-logind: got resume for 13:65
+[ 10007.593] xf86VTSwitch()
+[ 10007.714] (II) systemd-logind: got resume for 13:67
+[ 10007.714] (II) systemd-logind: got resume for 226:0
+[ 10007.714] xf86VTSwitch: Entering
+[ 10007.714] (II) AIGLX: Resuming AIGLX clients after VT switch
+[ 10007.718] FlushingSerial
+[ 10007.723] (II) event1  - Sleep Button: is tagged by udev as: Keyboard
+[ 10007.723] (II) event1  - Sleep Button: device is a keyboard
+[ 10007.724] input-thread: registered device 22
+[ 10007.725] FlushingSerial
+[ 10007.732] (II) event4  - VirtualBox USB Tablet: is tagged by udev as: Mouse
+[ 10007.734] (II) event4  - VirtualBox USB Tablet: device is a pointer
+[ 10007.736] FlushingSerial
+[ 10007.740] (II) event3  - ImExPS/2 Generic Explorer Mouse: is tagged by udev as: Mouse
+[ 10007.741] (II) event3  - ImExPS/2 Generic Explorer Mouse: device is a pointer
+[ 10007.742] input-thread: InputThreadDoWork waiting for devices
+[ 10007.743] (II) systemd-logind: got resume for 13:66
+[ 10007.744] FlushingSerial
+[ 10007.747] (II) event2  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[ 10007.748] (II) event2  - AT Translated Set 2 keyboard: device is a keyboard
+[ 10007.752] (II) systemd-logind: got resume for 13:69
+[ 10007.753] FlushingSerial
+[ 10007.755] (II) event5  - Video Bus: is tagged by udev as: Keyboard
+[ 10007.755] (II) event5  - Video Bus: device is a keyboard
+[ 10007.769] input-thread: InputThreadDoWork waiting for devices
+[ 10007.769] (II) systemd-logind: got resume for 13:64
+[ 10007.770] FlushingSerial
+[ 10007.772] (II) event0  - Power Button: is tagged by udev as: Keyboard
+[ 10007.772] (II) event0  - Power Button: device is a keyboard
+[ 10007.854] input-thread: InputThreadDoWork waiting for devices
+[ 10009.054] input-thread: InputThreadDoWork waiting for devices
+[ 10009.126] input-thread: InputThreadDoWork waiting for devices
+[ 10009.141] input-thread: InputThreadDoWork waiting for devices
+[ 10009.157] input-thread: InputThreadDoWork waiting for devices
+[ 10009.174] input-thread: InputThreadDoWork waiting for devices
+[ 10009.189] input-thread: InputThreadDoWork waiting for devices
+[ 10009.207] input-thread: InputThreadDoWork waiting for devices
+[ 10009.223] input-thread: InputThreadDoWork waiting for devices
+[ 10009.239] input-thread: InputThreadDoWork waiting for devices
+[ 10009.257] input-thread: InputThreadDoWork waiting for devices
+[ 10009.273] input-thread: InputThreadDoWork waiting for devices
+[ 10014.852] input-thread: InputThreadDoWork waiting for devices
+[ 10014.942] input-thread: InputThreadDoWork waiting for devices
+[ 10014.961] input-thread: InputThreadDoWork waiting for devices
+[ 10014.978] input-thread: InputThreadDoWork waiting for devices
+[ 10014.996] input-thread: InputThreadDoWork waiting for devices
+[ 10015.013] input-thread: InputThreadDoWork waiting for devices
+[ 10015.031] input-thread: InputThreadDoWork waiting for devices
+[ 10015.046] input-thread: InputThreadDoWork waiting for devices
+[ 10015.056] input-thread: InputThreadDoWork waiting for devices
+[ 10015.062] input-thread: InputThreadDoWork waiting for devices
+[ 10015.133] input-thread: InputThreadDoWork waiting for devices
+[ 10015.145] input-thread: InputThreadDoWork waiting for devices
+[ 10015.174] input-thread: InputThreadDoWork waiting for devices
+[ 10015.191] input-thread: InputThreadDoWork waiting for devices
+[ 10015.209] input-thread: InputThreadDoWork waiting for devices
+[ 10015.226] input-thread: InputThreadDoWork waiting for devices
+[ 10015.244] input-thread: InputThreadDoWork waiting for devices
+[ 10015.261] input-thread: InputThreadDoWork waiting for devices
+[ 10015.278] input-thread: InputThreadDoWork waiting for devices
+[ 10015.295] input-thread: InputThreadDoWork waiting for devices
+[ 10015.314] input-thread: InputThreadDoWork waiting for devices
+[ 10015.331] input-thread: InputThreadDoWork waiting for devices
+[ 10015.349] input-thread: InputThreadDoWork waiting for devices
+[ 10015.367] input-thread: InputThreadDoWork waiting for devices
+[ 10015.383] input-thread: InputThreadDoWork waiting for devices
+[ 10015.401] input-thread: InputThreadDoWork waiting for devices
+[ 10015.418] input-thread: InputThreadDoWork waiting for devices
+[ 10015.434] input-thread: InputThreadDoWork waiting for devices
+[ 10015.451] input-thread: InputThreadDoWork waiting for devices
+[ 10015.470] input-thread: InputThreadDoWork waiting for devices
+[ 10015.488] input-thread: InputThreadDoWork waiting for devices
+[ 10015.505] input-thread: InputThreadDoWork waiting for devices
+[ 10015.523] input-thread: InputThreadDoWork waiting for devices
+[ 10015.541] input-thread: InputThreadDoWork waiting for devices
+[ 10015.557] input-thread: InputThreadDoWork waiting for devices
+[ 10015.573] input-thread: InputThreadDoWork waiting for devices
+[ 10015.591] input-thread: InputThreadDoWork waiting for devices
+[ 10015.610] input-thread: InputThreadDoWork waiting for devices
+[ 10015.627] input-thread: InputThreadDoWork waiting for devices
+[ 10015.646] input-thread: InputThreadDoWork waiting for devices
+[ 10015.663] input-thread: InputThreadDoWork waiting for devices
+[ 10015.682] input-thread: InputThreadDoWork waiting for devices
+[ 10015.698] input-thread: InputThreadDoWork waiting for devices
+[ 10015.714] input-thread: InputThreadDoWork waiting for devices
+[ 10015.731] input-thread: InputThreadDoWork waiting for devices
+[ 10015.751] input-thread: InputThreadDoWork waiting for devices
+[ 10015.767] input-thread: InputThreadDoWork waiting for devices
+[ 10015.783] input-thread: InputThreadDoWork waiting for devices
+[ 10015.799] input-thread: InputThreadDoWork waiting for devices
+[ 10015.818] input-thread: InputThreadDoWork waiting for devices
+[ 10015.834] input-thread: InputThreadDoWork waiting for devices
+[ 10015.851] input-thread: InputThreadDoWork waiting for devices
+[ 10015.868] input-thread: InputThreadDoWork waiting for devices
+[ 10015.912] input-thread: InputThreadDoWork waiting for devices
+[ 10015.939] input-thread: InputThreadDoWork waiting for devices
+[ 10015.955] input-thread: InputThreadDoWork waiting for devices
+[ 10016.918] input-thread: InputThreadDoWork waiting for devices
+[ 10016.962] input-thread: InputThreadDoWork waiting for devices
+[ 10017.213] input-thread: InputThreadDoWork waiting for devices
+[ 10017.246] input-thread: InputThreadDoWork waiting for devices
+[ 10017.279] input-thread: InputThreadDoWork waiting for devices
+[ 10017.313] input-thread: InputThreadDoWork waiting for devices
+[ 10017.346] input-thread: InputThreadDoWork waiting for devices
+[ 10017.380] input-thread: InputThreadDoWork waiting for devices
+[ 10017.413] input-thread: InputThreadDoWork waiting for devices
+[ 10017.447] input-thread: InputThreadDoWork waiting for devices
+[ 10017.470] input-thread: InputThreadDoWork waiting for devices
+[ 10017.593] input-thread: InputThreadDoWork waiting for devices
+[ 10017.897] input-thread: InputThreadDoWork waiting for devices
+[ 10017.912] input-thread: InputThreadDoWork waiting for devices
+[ 10018.221] input-thread: InputThreadDoWork waiting for devices
+[ 10018.471] input-thread: InputThreadDoWork waiting for devices
+[ 10018.505] input-thread: InputThreadDoWork waiting for devices
+[ 10018.539] input-thread: InputThreadDoWork waiting for devices
+[ 10018.572] input-thread: InputThreadDoWork waiting for devices
+[ 10018.606] input-thread: InputThreadDoWork waiting for devices
+[ 10018.639] input-thread: InputThreadDoWork waiting for devices
+[ 10018.672] input-thread: InputThreadDoWork waiting for devices
+[ 10018.706] input-thread: InputThreadDoWork waiting for devices
+[ 10018.739] input-thread: InputThreadDoWork waiting for devices
+[ 10018.772] input-thread: InputThreadDoWork waiting for devices
+[ 10018.806] input-thread: InputThreadDoWork waiting for devices
+[ 10018.839] input-thread: InputThreadDoWork waiting for devices
+[ 10018.873] input-thread: InputThreadDoWork waiting for devices
+[ 10018.906] input-thread: InputThreadDoWork waiting for devices
+[ 10019.057] input-thread: InputThreadDoWork waiting for devices
+[ 10019.057] ProcessActionEvent(100,0x7ffde6b63264)
+[ 10019.057] FixKeyState: Key 68 down
+[ 10019.057] FixKeyState: Key 68 down
+[ 10019.189] input-thread: InputThreadDoWork waiting for devices
+[ 10019.314] input-thread: InputThreadDoWork waiting for devices
+[ 10019.320] input-thread: InputThreadDoWork waiting for devices
+[ 10019.432] input-thread: InputThreadDoWork waiting for devices
+[ 10019.497] input-thread: InputThreadDoWork waiting for devices
+[ 10019.558] input-thread: InputThreadDoWork waiting for devices
+[ 10019.695] input-thread: InputThreadDoWork waiting for devices
+[ 10019.751] input-thread: InputThreadDoWork waiting for devices
+[ 10019.857] input-thread: InputThreadDoWork waiting for devices
+[ 10020.466] input-thread: InputThreadDoWork waiting for devices
+[ 10020.716] input-thread: InputThreadDoWork waiting for devices
+[ 10020.722] input-thread: InputThreadDoWork waiting for devices
+[ 10020.888] input-thread: InputThreadDoWork waiting for devices
+[ 10021.825] input-thread: InputThreadDoWork waiting for devices
+[ 10021.970] input-thread: InputThreadDoWork waiting for devices
+[ 10022.281] input-thread: InputThreadDoWork waiting for devices
+[ 10022.316] input-thread: InputThreadDoWork waiting for devices
+[ 10022.493] input-thread: InputThreadDoWork waiting for devices
+[ 10022.871] input-thread: InputThreadDoWork waiting for devices
+[ 10022.891] input-thread: InputThreadDoWork waiting for devices
+[ 10023.071] input-thread: InputThreadDoWork waiting for devices
+[ 10023.071] ProcessActionEvent(100,0x7ffde6b63264)
+[ 10023.072] FixKeyState: Key 67 down
+[ 10023.072] FixKeyState: Key 67 down
+[ 10023.073] xf86VTSwitch()
+[ 10023.073] xf86VTSwitch: Leaving, xf86Exiting is FALSE
+[ 10023.073] (**) Option "fd" "35"
+[ 10023.073] (II) event0  - Power Button: device removed
+[ 10023.073] (**) Option "fd" "30"
+[ 10023.073] (II) event1  - Sleep Button: device removed
+[ 10023.073] (**) Option "fd" "34"
+[ 10023.073] (II) event5  - Video Bus: device removed
+[ 10023.073] (**) Option "fd" "29"
+[ 10023.074] (II) event4  - VirtualBox USB Tablet: device removed
+[ 10023.074] (**) Option "fd" "33"
+[ 10023.074] (II) event2  - AT Translated Set 2 keyboard: device removed
+[ 10023.074] input-thread: unregistered device: 22
+[ 10023.074] (**) Option "fd" "32"
+[ 10023.074] (II) event3  - ImExPS/2 Generic Explorer Mouse: device removed
+[ 10023.074] (II) AIGLX: Suspending AIGLX clients for VT switch
+[ 10023.074] input-thread: InputThreadDoWork waiting for devices
+[ 10023.083] (II) systemd-logind: got pause for 13:68
+[ 10023.083] (II) systemd-logind: got pause for 13:65
+[ 10023.083] (II) systemd-logind: got pause for 13:67
+[ 10023.083] (II) systemd-logind: got pause for 13:66
+[ 10023.083] (II) systemd-logind: got pause for 13:69
+[ 10023.083] (II) systemd-logind: got pause for 13:64
+[ 10026.123] xf86VTSwitch()
+[ 10026.146] (II) systemd-logind: got resume for 13:68
+[ 10026.146] xf86VTSwitch()
+[ 10026.207] (II) systemd-logind: got resume for 13:65
+[ 10026.207] xf86VTSwitch()
+[ 10026.230] (II) systemd-logind: got resume for 13:67
+[ 10026.230] (II) systemd-logind: got resume for 226:0
+[ 10026.230] xf86VTSwitch: Entering
+[ 10026.230] (II) AIGLX: Resuming AIGLX clients after VT switch
+[ 10026.236] FlushingSerial
+[ 10026.243] (II) event1  - Sleep Button: is tagged by udev as: Keyboard
+[ 10026.243] (II) event1  - Sleep Button: device is a keyboard
+[ 10026.244] input-thread: registered device 22
+[ 10026.245] input-thread: InputThreadDoWork waiting for devices
+[ 10026.247] FlushingSerial
+[ 10026.258] (II) event4  - VirtualBox USB Tablet: is tagged by udev as: Mouse
+[ 10026.259] (II) event4  - VirtualBox USB Tablet: device is a pointer
+[ 10026.260] FlushingSerial
+[ 10026.261] (II) event3  - ImExPS/2 Generic Explorer Mouse: is tagged by udev as: Mouse
+[ 10026.262] (II) event3  - ImExPS/2 Generic Explorer Mouse: device is a pointer
+[ 10026.263] (II) systemd-logind: got resume for 13:66
+[ 10026.263] FlushingSerial
+[ 10026.265] (II) event2  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[ 10026.265] (II) event2  - AT Translated Set 2 keyboard: device is a keyboard
+[ 10026.286] (II) systemd-logind: got resume for 13:69
+[ 10026.286] FlushingSerial
+[ 10026.288] (II) event5  - Video Bus: is tagged by udev as: Keyboard
+[ 10026.288] (II) event5  - Video Bus: device is a keyboard
+[ 10026.304] input-thread: InputThreadDoWork waiting for devices
+[ 10026.316] (II) systemd-logind: got resume for 13:64
+[ 10026.316] FlushingSerial
+[ 10026.317] (II) event0  - Power Button: is tagged by udev as: Keyboard
+[ 10026.317] (II) event0  - Power Button: device is a keyboard
+[ 10026.319] input-thread: InputThreadDoWork waiting for devices
+[ 10026.332] input-thread: InputThreadDoWork waiting for devices
+[ 10026.401] input-thread: InputThreadDoWork waiting for devices
+[ 10026.665] input-thread: InputThreadDoWork waiting for devices
+[ 10026.733] input-thread: InputThreadDoWork waiting for devices
+[ 10026.831] input-thread: InputThreadDoWork waiting for devices
+[ 10026.831] ProcessActionEvent(100,0x7ffde6b63264)
+[ 10026.831] FixKeyState: Key 68 down
+[ 10026.831] FixKeyState: Key 68 down
+[ 10026.951] input-thread: InputThreadDoWork waiting for devices
+[ 10027.013] input-thread: InputThreadDoWork waiting for devices
+[ 10027.099] input-thread: InputThreadDoWork waiting for devices
+[ 10027.116] input-thread: InputThreadDoWork waiting for devices
+[ 10027.277] input-thread: InputThreadDoWork waiting for devices
+[ 10027.366] input-thread: InputThreadDoWork waiting for devices
+[ 10027.371] input-thread: InputThreadDoWork waiting for devices
+[ 10027.621] input-thread: InputThreadDoWork waiting for devices
+[ 10027.655] input-thread: InputThreadDoWork waiting for devices
+[ 10027.680] input-thread: InputThreadDoWork waiting for devices
+[ 10027.725] input-thread: InputThreadDoWork waiting for devices
+[ 10027.736] input-thread: InputThreadDoWork waiting for devices
+[ 10028.414] input-thread: InputThreadDoWork waiting for devices
+[ 10028.439] input-thread: InputThreadDoWork waiting for devices
+[ 10028.655] input-thread: InputThreadDoWork waiting for devices
+[ 10028.657] input-thread: InputThreadDoWork waiting for devices
+[ 10028.974] input-thread: InputThreadDoWork waiting for devices
+[ 10029.108] input-thread: InputThreadDoWork waiting for devices
+[ 10029.601] input-thread: InputThreadDoWork waiting for devices
+[ 10029.761] input-thread: InputThreadDoWork waiting for devices
+[ 10029.815] input-thread: InputThreadDoWork waiting for devices
+[ 10029.880] input-thread: InputThreadDoWork waiting for devices
+[ 10029.895] input-thread: InputThreadDoWork waiting for devices
+[ 10029.955] input-thread: InputThreadDoWork waiting for devices
+[ 10030.161] input-thread: InputThreadDoWork waiting for devices
+[ 10030.183] input-thread: InputThreadDoWork waiting for devices
+[ 10030.202] input-thread: InputThreadDoWork waiting for devices
+[ 10030.206] input-thread: InputThreadDoWork waiting for devices
+[ 10030.574] input-thread: InputThreadDoWork waiting for devices
+[ 10030.606] input-thread: InputThreadDoWork waiting for devices
+[ 10030.706] input-thread: InputThreadDoWork waiting for devices
+[ 10030.729] input-thread: InputThreadDoWork waiting for devices
+[ 10030.782] input-thread: InputThreadDoWork waiting for devices
+[ 10030.831] input-thread: InputThreadDoWork waiting for devices
+[ 10030.922] input-thread: InputThreadDoWork waiting for devices
+[ 10030.936] input-thread: InputThreadDoWork waiting for devices
+[ 10031.044] input-thread: InputThreadDoWork waiting for devices
+[ 10031.056] input-thread: InputThreadDoWork waiting for devices
+[ 10031.063] input-thread: InputThreadDoWork waiting for devices
+[ 10031.148] input-thread: InputThreadDoWork waiting for devices
+[ 10031.239] input-thread: InputThreadDoWork waiting for devices
+[ 10031.257] input-thread: InputThreadDoWork waiting for devices
+[ 10031.288] input-thread: InputThreadDoWork waiting for devices
+[ 10031.298] input-thread: InputThreadDoWork waiting for devices
+[ 10031.309] input-thread: InputThreadDoWork waiting for devices
+[ 10031.372] input-thread: InputThreadDoWork waiting for devices
+[ 10031.382] input-thread: InputThreadDoWork waiting for devices
+[ 10031.412] input-thread: InputThreadDoWork waiting for devices
+[ 10031.443] input-thread: InputThreadDoWork waiting for devices
+[ 10031.456] input-thread: InputThreadDoWork waiting for devices
+[ 10031.543] input-thread: InputThreadDoWork waiting for devices
+[ 10031.575] input-thread: InputThreadDoWork waiting for devices
+[ 10031.585] input-thread: InputThreadDoWork waiting for devices
+[ 10031.619] input-thread: InputThreadDoWork waiting for devices
+[ 10031.698] input-thread: InputThreadDoWork waiting for devices
+[ 10031.727] input-thread: InputThreadDoWork waiting for devices
+[ 10031.770] input-thread: InputThreadDoWork waiting for devices
+[ 10031.912] input-thread: InputThreadDoWork waiting for devices
+[ 10031.917] input-thread: InputThreadDoWork waiting for devices
+[ 10031.920] input-thread: InputThreadDoWork waiting for devices
+[ 10036.680] input-thread: InputThreadDoWork waiting for devices
+[ 10036.864] input-thread: InputThreadDoWork waiting for devices
+[ 10037.232] input-thread: InputThreadDoWork waiting for devices
+[ 10037.291] input-thread: InputThreadDoWork waiting for devices
+[ 10037.327] input-thread: InputThreadDoWork waiting for devices
+[ 10037.346] input-thread: InputThreadDoWork waiting for devices
+[ 10037.354] input-thread: InputThreadDoWork waiting for devices
+[ 10037.372] input-thread: InputThreadDoWork waiting for devices
+[ 10037.389] input-thread: InputThreadDoWork waiting for devices
+[ 10037.404] input-thread: InputThreadDoWork waiting for devices
+[ 10037.421] input-thread: InputThreadDoWork waiting for devices
+[ 10037.438] input-thread: InputThreadDoWork waiting for devices
+[ 10037.454] input-thread: InputThreadDoWork waiting for devices
+[ 10037.471] input-thread: InputThreadDoWork waiting for devices
+[ 10037.488] input-thread: InputThreadDoWork waiting for devices
+[ 10037.505] input-thread: InputThreadDoWork waiting for devices
+[ 10037.523] input-thread: InputThreadDoWork waiting for devices
+[ 10037.540] input-thread: InputThreadDoWork waiting for devices
+[ 10037.556] input-thread: InputThreadDoWork waiting for devices
+[ 10037.595] input-thread: InputThreadDoWork waiting for devices
+[ 10037.606] input-thread: InputThreadDoWork waiting for devices
+[ 10037.637] input-thread: InputThreadDoWork waiting for devices
+[ 10037.707] input-thread: InputThreadDoWork waiting for devices
+[ 10037.728] input-thread: InputThreadDoWork waiting for devices
+[ 10037.741] input-thread: InputThreadDoWork waiting for devices
+[ 10037.759] input-thread: InputThreadDoWork waiting for devices
+[ 10037.776] input-thread: InputThreadDoWork waiting for devices
+[ 10037.793] input-thread: InputThreadDoWork waiting for devices
+[ 10037.813] input-thread: InputThreadDoWork waiting for devices
+[ 10037.828] input-thread: InputThreadDoWork waiting for devices
+[ 10037.847] input-thread: InputThreadDoWork waiting for devices
+[ 10037.865] input-thread: InputThreadDoWork waiting for devices
+[ 10037.885] input-thread: InputThreadDoWork waiting for devices
+[ 10037.902] input-thread: InputThreadDoWork waiting for devices
+[ 10037.922] input-thread: InputThreadDoWork waiting for devices
+[ 10037.941] input-thread: InputThreadDoWork waiting for devices
+[ 10037.948] input-thread: InputThreadDoWork waiting for devices
+[ 10037.966] input-thread: InputThreadDoWork waiting for devices
+[ 10037.980] input-thread: InputThreadDoWork waiting for devices
+[ 10037.997] input-thread: InputThreadDoWork waiting for devices
+[ 10038.016] input-thread: InputThreadDoWork waiting for devices
+[ 10038.034] input-thread: InputThreadDoWork waiting for devices
+[ 10038.047] input-thread: InputThreadDoWork waiting for devices
+[ 10038.053] input-thread: InputThreadDoWork waiting for devices
+[ 10038.059] input-thread: InputThreadDoWork waiting for devices
+[ 10038.071] input-thread: InputThreadDoWork waiting for devices
+[ 10038.089] input-thread: InputThreadDoWork waiting for devices
+[ 10038.107] input-thread: InputThreadDoWork waiting for devices
+[ 10038.124] input-thread: InputThreadDoWork waiting for devices
+[ 10038.143] input-thread: InputThreadDoWork waiting for devices
+[ 10038.160] input-thread: InputThreadDoWork waiting for devices
+[ 10038.168] input-thread: InputThreadDoWork waiting for devices
+[ 10038.247] input-thread: InputThreadDoWork waiting for devices
+[ 10038.275] input-thread: InputThreadDoWork waiting for devices
+[ 10038.288] input-thread: InputThreadDoWork waiting for devices
+[ 10038.293] input-thread: InputThreadDoWork waiting for devices
+[ 10038.300] input-thread: InputThreadDoWork waiting for devices
+[ 10038.310] input-thread: InputThreadDoWork waiting for devices
+[ 10038.327] input-thread: InputThreadDoWork waiting for devices
+[ 10038.346] input-thread: InputThreadDoWork waiting for devices
+[ 10038.362] input-thread: InputThreadDoWork waiting for devices
+[ 10038.381] input-thread: InputThreadDoWork waiting for devices
+[ 10038.479] input-thread: InputThreadDoWork waiting for devices
+[ 10038.493] input-thread: InputThreadDoWork waiting for devices
+[ 10038.506] input-thread: InputThreadDoWork waiting for devices
+[ 10038.510] input-thread: InputThreadDoWork waiting for devices
+[ 10038.519] input-thread: InputThreadDoWork waiting for devices
+[ 10038.529] input-thread: InputThreadDoWork waiting for devices
+[ 10038.546] input-thread: InputThreadDoWork waiting for devices
+[ 10038.563] input-thread: InputThreadDoWork waiting for devices
+[ 10038.578] input-thread: InputThreadDoWork waiting for devices
+[ 10038.596] input-thread: InputThreadDoWork waiting for devices
+[ 10038.686] input-thread: InputThreadDoWork waiting for devices
+[ 10038.726] input-thread: InputThreadDoWork waiting for devices
+[ 10038.739] input-thread: InputThreadDoWork waiting for devices
+[ 10038.758] input-thread: InputThreadDoWork waiting for devices
+[ 10038.858] input-thread: InputThreadDoWork waiting for devices
+[ 10038.874] input-thread: InputThreadDoWork waiting for devices
+[ 10038.910] input-thread: InputThreadDoWork waiting for devices
+[ 10038.989] input-thread: InputThreadDoWork waiting for devices
+[ 10039.034] input-thread: InputThreadDoWork waiting for devices
+[ 10039.052] input-thread: InputThreadDoWork waiting for devices
+[ 10039.068] input-thread: InputThreadDoWork waiting for devices
+[ 10039.084] input-thread: InputThreadDoWork waiting for devices
+[ 10039.101] input-thread: InputThreadDoWork waiting for devices
+[ 10039.119] input-thread: InputThreadDoWork waiting for devices
+[ 10039.137] input-thread: InputThreadDoWork waiting for devices
+[ 10039.155] input-thread: InputThreadDoWork waiting for devices
+[ 10039.173] input-thread: InputThreadDoWork waiting for devices
+[ 10039.189] input-thread: InputThreadDoWork waiting for devices
+[ 10039.207] input-thread: InputThreadDoWork waiting for devices
+[ 10039.225] input-thread: InputThreadDoWork waiting for devices
+[ 10039.242] input-thread: InputThreadDoWork waiting for devices
+[ 10039.259] input-thread: InputThreadDoWork waiting for devices
+[ 10039.273] input-thread: InputThreadDoWork waiting for devices
+[ 10039.291] input-thread: InputThreadDoWork waiting for devices
+[ 10039.322] input-thread: InputThreadDoWork waiting for devices
+[ 10039.336] input-thread: InputThreadDoWork waiting for devices
+[ 10039.395] input-thread: InputThreadDoWork waiting for devices
+[ 10039.441] input-thread: InputThreadDoWork waiting for devices
+[ 10039.453] input-thread: InputThreadDoWork waiting for devices
+[ 10039.457] input-thread: InputThreadDoWork waiting for devices
+[ 10039.466] input-thread: InputThreadDoWork waiting for devices
+[ 10039.474] input-thread: InputThreadDoWork waiting for devices
+[ 10039.492] input-thread: InputThreadDoWork waiting for devices
+[ 10039.507] input-thread: InputThreadDoWork waiting for devices
+[ 10039.523] input-thread: InputThreadDoWork waiting for devices
+[ 10039.541] input-thread: InputThreadDoWork waiting for devices
+[ 10039.557] input-thread: InputThreadDoWork waiting for devices
+[ 10039.574] input-thread: InputThreadDoWork waiting for devices
+[ 10039.588] input-thread: InputThreadDoWork waiting for devices
+[ 10039.606] input-thread: InputThreadDoWork waiting for devices
+[ 10039.622] input-thread: InputThreadDoWork waiting for devices
+[ 10039.641] input-thread: InputThreadDoWork waiting for devices
+[ 10039.673] input-thread: InputThreadDoWork waiting for devices
+[ 10039.715] input-thread: InputThreadDoWork waiting for devices
+[ 10039.742] input-thread: InputThreadDoWork waiting for devices
+[ 10039.755] input-thread: InputThreadDoWork waiting for devices
+[ 10039.773] input-thread: InputThreadDoWork waiting for devices
+[ 10039.790] input-thread: InputThreadDoWork waiting for devices
+[ 10039.824] input-thread: InputThreadDoWork waiting for devices
+[ 10039.857] input-thread: InputThreadDoWork waiting for devices
+[ 10039.861] input-thread: InputThreadDoWork waiting for devices
+[ 10039.892] input-thread: InputThreadDoWork waiting for devices
+[ 10040.034] input-thread: InputThreadDoWork waiting for devices
+[ 10040.139] input-thread: InputThreadDoWork waiting for devices
+[ 10040.145] input-thread: InputThreadDoWork waiting for devices
+[ 10040.175] input-thread: InputThreadDoWork waiting for devices
+[ 10040.211] input-thread: InputThreadDoWork waiting for devices
+[ 10040.230] input-thread: InputThreadDoWork waiting for devices
+[ 10040.249] input-thread: InputThreadDoWork waiting for devices
+[ 10040.255] input-thread: InputThreadDoWork waiting for devices
+[ 10040.266] input-thread: InputThreadDoWork waiting for devices
+[ 10040.282] input-thread: InputThreadDoWork waiting for devices
+[ 10040.341] input-thread: InputThreadDoWork waiting for devices
+[ 10040.526] input-thread: InputThreadDoWork waiting for devices
+[ 10040.564] input-thread: InputThreadDoWork waiting for devices
+[ 10040.647] input-thread: InputThreadDoWork waiting for devices
+[ 10040.663] input-thread: InputThreadDoWork waiting for devices
+[ 10040.680] input-thread: InputThreadDoWork waiting for devices
+[ 10040.695] input-thread: InputThreadDoWork waiting for devices
+[ 10040.712] input-thread: InputThreadDoWork waiting for devices
+[ 10040.731] input-thread: InputThreadDoWork waiting for devices
+[ 10040.749] input-thread: InputThreadDoWork waiting for devices
+[ 10040.774] input-thread: InputThreadDoWork waiting for devices
+[ 10040.796] input-thread: InputThreadDoWork waiting for devices
+[ 10040.818] input-thread: InputThreadDoWork waiting for devices
+[ 10040.835] input-thread: InputThreadDoWork waiting for devices
+[ 10040.853] input-thread: InputThreadDoWork waiting for devices
+[ 10040.870] input-thread: InputThreadDoWork waiting for devices
+[ 10040.887] input-thread: InputThreadDoWork waiting for devices
+[ 10040.900] input-thread: InputThreadDoWork waiting for devices
+[ 10040.907] input-thread: InputThreadDoWork waiting for devices
+[ 10040.913] input-thread: InputThreadDoWork waiting for devices
+[ 10040.926] input-thread: InputThreadDoWork waiting for devices
+[ 10040.945] input-thread: InputThreadDoWork waiting for devices
+[ 10040.961] input-thread: InputThreadDoWork waiting for devices
+[ 10040.978] input-thread: InputThreadDoWork waiting for devices
+[ 10040.994] input-thread: InputThreadDoWork waiting for devices
+[ 10041.011] input-thread: InputThreadDoWork waiting for devices
+[ 10041.029] input-thread: InputThreadDoWork waiting for devices
+[ 10041.047] input-thread: InputThreadDoWork waiting for devices
+[ 10041.055] input-thread: InputThreadDoWork waiting for devices
+[ 10041.067] input-thread: InputThreadDoWork waiting for devices
+[ 10041.161] input-thread: InputThreadDoWork waiting for devices
+[ 10041.249] input-thread: InputThreadDoWork waiting for devices
+[ 10041.277] input-thread: InputThreadDoWork waiting for devices
+[ 10041.428] input-thread: InputThreadDoWork waiting for devices
+[ 10041.454] input-thread: InputThreadDoWork waiting for devices
+[ 10041.543] input-thread: InputThreadDoWork waiting for devices
+[ 10041.558] input-thread: InputThreadDoWork waiting for devices
+[ 10041.569] input-thread: InputThreadDoWork waiting for devices
+[ 10041.691] input-thread: InputThreadDoWork waiting for devices
+[ 10041.710] input-thread: InputThreadDoWork waiting for devices
+[ 10041.729] input-thread: InputThreadDoWork waiting for devices
+[ 10041.747] input-thread: InputThreadDoWork waiting for devices
+[ 10041.776] input-thread: InputThreadDoWork waiting for devices
+[ 10041.877] input-thread: InputThreadDoWork waiting for devices
+[ 10042.011] input-thread: InputThreadDoWork waiting for devices
+[ 10042.024] input-thread: InputThreadDoWork waiting for devices
+[ 10042.027] input-thread: InputThreadDoWork waiting for devices
+[ 10042.037] input-thread: InputThreadDoWork waiting for devices
+[ 10042.042] input-thread: InputThreadDoWork waiting for devices
+[ 10042.102] input-thread: InputThreadDoWork waiting for devices
+[ 10042.189] input-thread: InputThreadDoWork waiting for devices
+[ 10042.195] input-thread: InputThreadDoWork waiting for devices
+[ 10042.265] input-thread: InputThreadDoWork waiting for devices
+[ 10042.278] input-thread: InputThreadDoWork waiting for devices
+[ 10042.282] input-thread: InputThreadDoWork waiting for devices
+[ 10042.291] input-thread: InputThreadDoWork waiting for devices
+[ 10042.299] input-thread: InputThreadDoWork waiting for devices
+[ 10042.317] input-thread: InputThreadDoWork waiting for devices
+[ 10042.377] input-thread: InputThreadDoWork waiting for devices
+[ 10042.515] input-thread: InputThreadDoWork waiting for devices
+[ 10042.530] input-thread: InputThreadDoWork waiting for devices
+[ 10042.545] input-thread: InputThreadDoWork waiting for devices
+[ 10042.563] input-thread: InputThreadDoWork waiting for devices
+[ 10042.581] input-thread: InputThreadDoWork waiting for devices
+[ 10042.599] input-thread: InputThreadDoWork waiting for devices
+[ 10042.617] input-thread: InputThreadDoWork waiting for devices
+[ 10042.633] input-thread: InputThreadDoWork waiting for devices
+[ 10042.650] input-thread: InputThreadDoWork waiting for devices
+[ 10042.666] input-thread: InputThreadDoWork waiting for devices
+[ 10042.683] input-thread: InputThreadDoWork waiting for devices
+[ 10042.700] input-thread: InputThreadDoWork waiting for devices
+[ 10042.717] input-thread: InputThreadDoWork waiting for devices
+[ 10042.743] input-thread: InputThreadDoWork waiting for devices
+[ 10042.750] input-thread: InputThreadDoWork waiting for devices
+[ 10042.842] input-thread: InputThreadDoWork waiting for devices
+[ 10042.896] input-thread: InputThreadDoWork waiting for devices
+[ 10042.898] input-thread: InputThreadDoWork waiting for devices
+[ 10042.910] input-thread: InputThreadDoWork waiting for devices
+[ 10042.931] input-thread: InputThreadDoWork waiting for devices
+[ 10042.945] input-thread: InputThreadDoWork waiting for devices
+[ 10042.960] input-thread: InputThreadDoWork waiting for devices
+[ 10042.977] input-thread: InputThreadDoWork waiting for devices
+[ 10042.995] input-thread: InputThreadDoWork waiting for devices
+[ 10043.012] input-thread: InputThreadDoWork waiting for devices
+[ 10043.029] input-thread: InputThreadDoWork waiting for devices
+[ 10043.046] input-thread: InputThreadDoWork waiting for devices
+[ 10043.065] input-thread: InputThreadDoWork waiting for devices
+[ 10043.072] input-thread: InputThreadDoWork waiting for devices
+[ 10043.083] input-thread: InputThreadDoWork waiting for devices
+[ 10043.101] input-thread: InputThreadDoWork waiting for devices
+[ 10043.119] input-thread: InputThreadDoWork waiting for devices
+[ 10043.136] input-thread: InputThreadDoWork waiting for devices
+[ 10043.151] input-thread: InputThreadDoWork waiting for devices
+[ 10043.167] input-thread: InputThreadDoWork waiting for devices
+[ 10043.180] input-thread: InputThreadDoWork waiting for devices
+[ 10043.183] input-thread: InputThreadDoWork waiting for devices
+[ 10043.193] input-thread: InputThreadDoWork waiting for devices
+[ 10043.199] input-thread: InputThreadDoWork waiting for devices
+[ 10043.217] input-thread: InputThreadDoWork waiting for devices
+[ 10043.235] input-thread: InputThreadDoWork waiting for devices
+[ 10043.253] input-thread: InputThreadDoWork waiting for devices
+[ 10043.269] input-thread: InputThreadDoWork waiting for devices
+[ 10043.287] input-thread: InputThreadDoWork waiting for devices
+[ 10043.304] input-thread: InputThreadDoWork waiting for devices
+[ 10043.320] input-thread: InputThreadDoWork waiting for devices
+[ 10043.337] input-thread: InputThreadDoWork waiting for devices
+[ 10043.408] input-thread: InputThreadDoWork waiting for devices
+[ 10043.433] input-thread: InputThreadDoWork waiting for devices
+[ 10043.449] input-thread: InputThreadDoWork waiting for devices
+[ 10043.464] input-thread: InputThreadDoWork waiting for devices
+[ 10043.509] input-thread: InputThreadDoWork waiting for devices
+[ 10043.543] input-thread: InputThreadDoWork waiting for devices
+[ 10043.643] input-thread: InputThreadDoWork waiting for devices
+[ 10043.792] input-thread: InputThreadDoWork waiting for devices
+[ 10043.845] input-thread: InputThreadDoWork waiting for devices
+[ 10043.901] input-thread: InputThreadDoWork waiting for devices
+[ 10043.914] input-thread: InputThreadDoWork waiting for devices
+[ 10043.916] input-thread: InputThreadDoWork waiting for devices
+[ 10043.926] input-thread: InputThreadDoWork waiting for devices
+[ 10043.933] input-thread: InputThreadDoWork waiting for devices
+[ 10043.951] input-thread: InputThreadDoWork waiting for devices
+[ 10043.970] input-thread: InputThreadDoWork waiting for devices
+[ 10043.988] input-thread: InputThreadDoWork waiting for devices
+[ 10044.004] input-thread: InputThreadDoWork waiting for devices
+[ 10044.022] input-thread: InputThreadDoWork waiting for devices
+[ 10044.041] input-thread: InputThreadDoWork waiting for devices
+[ 10044.057] input-thread: InputThreadDoWork waiting for devices
+[ 10044.073] input-thread: InputThreadDoWork waiting for devices
+[ 10044.090] input-thread: InputThreadDoWork waiting for devices
+[ 10044.107] input-thread: InputThreadDoWork waiting for devices
+[ 10044.123] input-thread: InputThreadDoWork waiting for devices
+[ 10044.141] input-thread: InputThreadDoWork waiting for devices
+[ 10044.156] input-thread: InputThreadDoWork waiting for devices
+[ 10044.171] input-thread: InputThreadDoWork waiting for devices
+[ 10044.189] input-thread: InputThreadDoWork waiting for devices
+[ 10044.207] input-thread: InputThreadDoWork waiting for devices
+[ 10044.225] input-thread: InputThreadDoWork waiting for devices
+[ 10044.243] input-thread: InputThreadDoWork waiting for devices
+[ 10044.259] input-thread: InputThreadDoWork waiting for devices
+[ 10044.275] input-thread: InputThreadDoWork waiting for devices
+[ 10044.291] input-thread: InputThreadDoWork waiting for devices
+[ 10044.306] input-thread: InputThreadDoWork waiting for devices
+[ 10044.323] input-thread: InputThreadDoWork waiting for devices
+[ 10044.339] input-thread: InputThreadDoWork waiting for devices
+[ 10044.355] input-thread: InputThreadDoWork waiting for devices
+[ 10044.371] input-thread: InputThreadDoWork waiting for devices
+[ 10044.389] input-thread: InputThreadDoWork waiting for devices
+[ 10044.405] input-thread: InputThreadDoWork waiting for devices
+[ 10044.422] input-thread: InputThreadDoWork waiting for devices
+[ 10044.439] input-thread: InputThreadDoWork waiting for devices
+[ 10044.457] input-thread: InputThreadDoWork waiting for devices
+[ 10044.473] input-thread: InputThreadDoWork waiting for devices
+[ 10044.489] input-thread: InputThreadDoWork waiting for devices
+[ 10044.506] input-thread: InputThreadDoWork waiting for devices
+[ 10044.522] input-thread: InputThreadDoWork waiting for devices
+[ 10044.531] input-thread: InputThreadDoWork waiting for devices
+[ 10044.579] input-thread: InputThreadDoWork waiting for devices
+[ 10044.634] input-thread: InputThreadDoWork waiting for devices
+[ 10044.652] input-thread: InputThreadDoWork waiting for devices
+[ 10044.653] input-thread: InputThreadDoWork waiting for devices
+[ 10044.660] input-thread: InputThreadDoWork waiting for devices
+[ 10044.666] input-thread: InputThreadDoWork waiting for devices
+[ 10044.672] input-thread: InputThreadDoWork waiting for devices
+[ 10044.685] input-thread: InputThreadDoWork waiting for devices
+[ 10044.702] input-thread: InputThreadDoWork waiting for devices
+[ 10044.720] input-thread: InputThreadDoWork waiting for devices
+[ 10044.738] input-thread: InputThreadDoWork waiting for devices
+[ 10044.783] input-thread: InputThreadDoWork waiting for devices
+[ 10044.784] input-thread: InputThreadDoWork waiting for devices
+[ 10044.818] input-thread: InputThreadDoWork waiting for devices
+[ 10044.820] input-thread: InputThreadDoWork waiting for devices
+[ 10044.821] input-thread: InputThreadDoWork waiting for devices
+[ 10044.873] input-thread: InputThreadDoWork waiting for devices
+[ 10044.922] input-thread: InputThreadDoWork waiting for devices
+[ 10044.969] input-thread: InputThreadDoWork waiting for devices
+[ 10044.982] input-thread: InputThreadDoWork waiting for devices
+[ 10044.991] input-thread: InputThreadDoWork waiting for devices
+[ 10045.098] input-thread: InputThreadDoWork waiting for devices
+[ 10045.104] input-thread: InputThreadDoWork waiting for devices
+[ 10045.144] input-thread: InputThreadDoWork waiting for devices
+[ 10045.188] input-thread: InputThreadDoWork waiting for devices
+[ 10045.206] input-thread: InputThreadDoWork waiting for devices
+[ 10045.224] input-thread: InputThreadDoWork waiting for devices
+[ 10045.242] input-thread: InputThreadDoWork waiting for devices
+[ 10045.244] input-thread: InputThreadDoWork waiting for devices
+[ 10045.260] input-thread: InputThreadDoWork waiting for devices
+[ 10045.278] input-thread: InputThreadDoWork waiting for devices
+[ 10045.294] input-thread: InputThreadDoWork waiting for devices
+[ 10045.311] input-thread: InputThreadDoWork waiting for devices
+[ 10045.325] input-thread: InputThreadDoWork waiting for devices
+[ 10045.330] input-thread: InputThreadDoWork waiting for devices
+[ 10045.346] input-thread: InputThreadDoWork waiting for devices
+[ 10045.361] input-thread: InputThreadDoWork waiting for devices
+[ 10045.378] input-thread: InputThreadDoWork waiting for devices
+[ 10045.404] input-thread: InputThreadDoWork waiting for devices
+[ 10045.406] input-thread: InputThreadDoWork waiting for devices
+[ 10045.443] input-thread: InputThreadDoWork waiting for devices
+[ 10045.465] input-thread: InputThreadDoWork waiting for devices
+[ 10045.499] input-thread: InputThreadDoWork waiting for devices
+[ 10045.507] input-thread: InputThreadDoWork waiting for devices
+[ 10045.519] input-thread: InputThreadDoWork waiting for devices
+[ 10045.523] input-thread: InputThreadDoWork waiting for devices
+[ 10045.532] input-thread: InputThreadDoWork waiting for devices
+[ 10045.539] input-thread: InputThreadDoWork waiting for devices
+[ 10045.555] input-thread: InputThreadDoWork waiting for devices
+[ 10045.573] input-thread: InputThreadDoWork waiting for devices
+[ 10045.591] input-thread: InputThreadDoWork waiting for devices
+[ 10045.609] input-thread: InputThreadDoWork waiting for devices
+[ 10045.625] input-thread: InputThreadDoWork waiting for devices
+[ 10045.642] input-thread: InputThreadDoWork waiting for devices
+[ 10045.661] input-thread: InputThreadDoWork waiting for devices
+[ 10045.681] input-thread: InputThreadDoWork waiting for devices
+[ 10045.699] input-thread: InputThreadDoWork waiting for devices
+[ 10045.714] input-thread: InputThreadDoWork waiting for devices
+[ 10045.742] input-thread: InputThreadDoWork waiting for devices
+[ 10045.762] input-thread: InputThreadDoWork waiting for devices
+[ 10045.774] input-thread: InputThreadDoWork waiting for devices
+[ 10045.820] input-thread: InputThreadDoWork waiting for devices
+[ 10045.859] input-thread: InputThreadDoWork waiting for devices
+[ 10045.942] input-thread: InputThreadDoWork waiting for devices
+[ 10045.995] input-thread: InputThreadDoWork waiting for devices
+[ 10046.070] input-thread: InputThreadDoWork waiting for devices
+[ 10046.072] input-thread: InputThreadDoWork waiting for devices
+[ 10046.130] input-thread: InputThreadDoWork waiting for devices
+[ 10046.146] input-thread: InputThreadDoWork waiting for devices
+[ 10046.146] input-thread: InputThreadDoWork waiting for devices
+[ 10046.176] input-thread: InputThreadDoWork waiting for devices
+[ 10046.944] input-thread: InputThreadDoWork waiting for devices
+[ 10046.958] input-thread: InputThreadDoWork waiting for devices
+[ 10046.967] input-thread: InputThreadDoWork waiting for devices
+[ 10047.151] input-thread: InputThreadDoWork waiting for devices
+[ 10047.201] input-thread: InputThreadDoWork waiting for devices
+[ 10047.242] input-thread: InputThreadDoWork waiting for devices
+[ 10047.855] input-thread: InputThreadDoWork waiting for devices
+[ 10047.901] input-thread: InputThreadDoWork waiting for devices
+[ 10047.910] input-thread: InputThreadDoWork waiting for devices
+[ 10048.060] input-thread: InputThreadDoWork waiting for devices
+[ 10048.070] input-thread: InputThreadDoWork waiting for devices
+[ 10048.095] input-thread: InputThreadDoWork waiting for devices
+[ 10048.212] input-thread: InputThreadDoWork waiting for devices
+[ 10048.256] input-thread: InputThreadDoWork waiting for devices
+[ 10048.265] input-thread: InputThreadDoWork waiting for devices
+[ 10048.433] input-thread: InputThreadDoWork waiting for devices
+[ 10048.454] input-thread: InputThreadDoWork waiting for devices
+[ 10048.457] input-thread: InputThreadDoWork waiting for devices
+[ 10048.644] input-thread: InputThreadDoWork waiting for devices
+[ 10048.678] input-thread: InputThreadDoWork waiting for devices
+[ 10048.691] input-thread: InputThreadDoWork waiting for devices
+[ 10048.858] input-thread: InputThreadDoWork waiting for devices
+[ 10048.864] input-thread: InputThreadDoWork waiting for devices
+[ 10048.875] input-thread: InputThreadDoWork waiting for devices
+[ 10049.550] input-thread: InputThreadDoWork waiting for devices
+[ 10049.579] input-thread: InputThreadDoWork waiting for devices
+[ 10049.689] input-thread: InputThreadDoWork waiting for devices
+[ 10049.762] input-thread: InputThreadDoWork waiting for devices
+[ 10049.809] input-thread: InputThreadDoWork waiting for devices
+[ 10049.828] input-thread: InputThreadDoWork waiting for devices
+[ 10049.844] input-thread: InputThreadDoWork waiting for devices
+[ 10049.863] input-thread: InputThreadDoWork waiting for devices
+[ 10049.881] input-thread: InputThreadDoWork waiting for devices
+[ 10049.897] input-thread: InputThreadDoWork waiting for devices
+[ 10049.905] input-thread: InputThreadDoWork waiting for devices
+[ 10049.918] input-thread: InputThreadDoWork waiting for devices
+[ 10049.935] input-thread: InputThreadDoWork waiting for devices
+[ 10049.949] input-thread: InputThreadDoWork waiting for devices
+[ 10049.966] input-thread: InputThreadDoWork waiting for devices
+[ 10049.981] input-thread: InputThreadDoWork waiting for devices
+[ 10049.997] input-thread: InputThreadDoWork waiting for devices
+[ 10050.012] input-thread: InputThreadDoWork waiting for devices
+[ 10050.028] input-thread: InputThreadDoWork waiting for devices
+[ 10050.042] input-thread: InputThreadDoWork waiting for devices
+[ 10050.064] input-thread: InputThreadDoWork waiting for devices
+[ 10050.092] input-thread: InputThreadDoWork waiting for devices
+[ 10050.110] input-thread: InputThreadDoWork waiting for devices
+[ 10050.255] input-thread: InputThreadDoWork waiting for devices
+[ 10050.284] input-thread: InputThreadDoWork waiting for devices
+[ 10050.368] input-thread: InputThreadDoWork waiting for devices
+[ 10050.380] input-thread: InputThreadDoWork waiting for devices
+[ 10050.393] input-thread: InputThreadDoWork waiting for devices
+[ 10051.093] input-thread: InputThreadDoWork waiting for devices
+[ 10051.119] input-thread: InputThreadDoWork waiting for devices
+[ 10051.262] input-thread: InputThreadDoWork waiting for devices
+[ 10051.279] input-thread: InputThreadDoWork waiting for devices
+[ 10051.292] input-thread: InputThreadDoWork waiting for devices
+[ 10051.414] input-thread: InputThreadDoWork waiting for devices
+[ 10051.665] input-thread: InputThreadDoWork waiting for devices
+[ 10051.698] input-thread: InputThreadDoWork waiting for devices
+[ 10051.732] input-thread: InputThreadDoWork waiting for devices
+[ 10051.765] input-thread: InputThreadDoWork waiting for devices
+[ 10051.799] input-thread: InputThreadDoWork waiting for devices
+[ 10051.833] input-thread: InputThreadDoWork waiting for devices
+[ 10051.867] input-thread: InputThreadDoWork waiting for devices
+[ 10051.900] input-thread: InputThreadDoWork waiting for devices
+[ 10051.933] input-thread: InputThreadDoWork waiting for devices
+[ 10051.944] input-thread: InputThreadDoWork waiting for devices
+[ 10052.195] input-thread: InputThreadDoWork waiting for devices
+[ 10052.228] input-thread: InputThreadDoWork waiting for devices
+[ 10052.261] input-thread: InputThreadDoWork waiting for devices
+[ 10052.294] input-thread: InputThreadDoWork waiting for devices
+[ 10052.327] input-thread: InputThreadDoWork waiting for devices
+[ 10052.361] input-thread: InputThreadDoWork waiting for devices
+[ 10052.394] input-thread: InputThreadDoWork waiting for devices
+[ 10052.427] input-thread: InputThreadDoWork waiting for devices
+[ 10052.460] input-thread: InputThreadDoWork waiting for devices
+[ 10052.494] input-thread: InputThreadDoWork waiting for devices
+[ 10052.527] input-thread: InputThreadDoWork waiting for devices
+[ 10052.561] input-thread: InputThreadDoWork waiting for devices
+[ 10052.595] input-thread: InputThreadDoWork waiting for devices
+[ 10052.628] input-thread: InputThreadDoWork waiting for devices
+[ 10052.661] input-thread: InputThreadDoWork waiting for devices
+[ 10052.694] input-thread: InputThreadDoWork waiting for devices
+[ 10052.728] input-thread: InputThreadDoWork waiting for devices
+[ 10052.761] input-thread: InputThreadDoWork waiting for devices
+[ 10052.795] input-thread: InputThreadDoWork waiting for devices
+[ 10052.828] input-thread: InputThreadDoWork waiting for devices
+[ 10052.862] input-thread: InputThreadDoWork waiting for devices
+[ 10052.895] input-thread: InputThreadDoWork waiting for devices
+[ 10052.928] input-thread: InputThreadDoWork waiting for devices
+[ 10052.962] input-thread: InputThreadDoWork waiting for devices
+[ 10052.996] input-thread: InputThreadDoWork waiting for devices
+[ 10053.029] input-thread: InputThreadDoWork waiting for devices
+[ 10053.062] input-thread: InputThreadDoWork waiting for devices
+[ 10053.096] input-thread: InputThreadDoWork waiting for devices
+[ 10053.098] input-thread: InputThreadDoWork waiting for devices
+[ 10053.098] ProcessActionEvent(100,0x7ffde6b63264)
+[ 10053.098] FixKeyState: Key 67 down
+[ 10053.098] FixKeyState: Key 67 down
+[ 10053.098] xf86VTSwitch()
+[ 10053.098] xf86VTSwitch: Leaving, xf86Exiting is FALSE
+[ 10053.099] (**) Option "fd" "36"
+[ 10053.099] (II) event0  - Power Button: device removed
+[ 10053.099] (**) Option "fd" "31"
+[ 10053.099] (II) event1  - Sleep Button: device removed
+[ 10053.099] (**) Option "fd" "35"
+[ 10053.099] (II) event5  - Video Bus: device removed
+[ 10053.099] (**) Option "fd" "30"
+[ 10053.099] (II) event4  - VirtualBox USB Tablet: device removed
+[ 10053.100] (**) Option "fd" "34"
+[ 10053.100] (II) event2  - AT Translated Set 2 keyboard: device removed
+[ 10053.100] input-thread: unregistered device: 22
+[ 10053.100] (**) Option "fd" "33"
+[ 10053.100] (II) event3  - ImExPS/2 Generic Explorer Mouse: device removed
+[ 10053.100] (II) AIGLX: Suspending AIGLX clients for VT switch
+[ 10053.100] input-thread: InputThreadDoWork waiting for devices
+[ 10053.109] (II) systemd-logind: got pause for 13:68
+[ 10053.109] (II) systemd-logind: got pause for 13:65
+[ 10053.109] (II) systemd-logind: got pause for 13:67
+[ 10053.110] (II) systemd-logind: got pause for 13:66
+[ 10053.110] (II) systemd-logind: got pause for 13:69
+[ 10053.110] (II) systemd-logind: got pause for 13:64
+[ 10098.036] xf86VTSwitch()
+[ 10098.060] (II) systemd-logind: got resume for 13:68
+[ 10098.060] xf86VTSwitch()
+[ 10098.128] (II) systemd-logind: got resume for 13:65
+[ 10098.128] xf86VTSwitch()
+[ 10098.150] (II) systemd-logind: got resume for 13:67
+[ 10098.151] xf86VTSwitch()
+[ 10098.151] (II) systemd-logind: got resume for 226:0
+[ 10098.151] xf86VTSwitch: Entering
+[ 10098.151] (II) AIGLX: Resuming AIGLX clients after VT switch
+[ 10098.154] FlushingSerial
+[ 10098.158] (II) event1  - Sleep Button: is tagged by udev as: Keyboard
+[ 10098.158] (II) event1  - Sleep Button: device is a keyboard
+[ 10098.159] input-thread: registered device 22
+[ 10098.160] FlushingSerial
+[ 10098.168] (II) event4  - VirtualBox USB Tablet: is tagged by udev as: Mouse
+[ 10098.170] (II) event4  - VirtualBox USB Tablet: device is a pointer
+[ 10098.171] FlushingSerial
+[ 10098.173] (II) event3  - ImExPS/2 Generic Explorer Mouse: is tagged by udev as: Mouse
+[ 10098.173] (II) event3  - ImExPS/2 Generic Explorer Mouse: device is a pointer
+[ 10098.174] input-thread: InputThreadDoWork waiting for devices
+[ 10098.174] (II) systemd-logind: got resume for 13:66
+[ 10098.174] FlushingSerial
+[ 10098.177] (II) event2  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[ 10098.177] (II) event2  - AT Translated Set 2 keyboard: device is a keyboard
+[ 10098.216] (II) systemd-logind: got resume for 13:69
+[ 10098.217] FlushingSerial
+[ 10098.219] (II) event5  - Video Bus: is tagged by udev as: Keyboard
+[ 10098.219] (II) event5  - Video Bus: device is a keyboard
+[ 10098.247] (II) systemd-logind: got resume for 13:64
+[ 10098.248] FlushingSerial
+[ 10098.249] (II) event0  - Power Button: is tagged by udev as: Keyboard
+[ 10098.250] (II) event0  - Power Button: device is a keyboard
+[ 10098.589] input-thread: InputThreadDoWork waiting for devices
+[ 10098.722] input-thread: InputThreadDoWork waiting for devices
+[ 10098.858] input-thread: InputThreadDoWork waiting for devices
+[ 10098.983] input-thread: InputThreadDoWork waiting for devices
+[ 10099.063] input-thread: InputThreadDoWork waiting for devices
+[ 10099.143] input-thread: InputThreadDoWork waiting for devices
+[ 10099.249] input-thread: InputThreadDoWork waiting for devices
+[ 10099.271] input-thread: InputThreadDoWork waiting for devices
+[ 10099.327] input-thread: InputThreadDoWork waiting for devices
+[ 10099.387] input-thread: InputThreadDoWork waiting for devices
+[ 10099.500] input-thread: InputThreadDoWork waiting for devices
+[ 10099.579] input-thread: InputThreadDoWork waiting for devices
+[ 10099.656] input-thread: InputThreadDoWork waiting for devices
+[ 10099.744] input-thread: InputThreadDoWork waiting for devices
+[ 10099.897] input-thread: InputThreadDoWork waiting for devices
+[ 10099.905] input-thread: InputThreadDoWork waiting for devices
+[ 10099.969] input-thread: InputThreadDoWork waiting for devices
+[ 10099.980] input-thread: InputThreadDoWork waiting for devices
+[ 10099.994] input-thread: InputThreadDoWork waiting for devices
+[ 10100.080] input-thread: InputThreadDoWork waiting for devices
+[ 10100.109] input-thread: InputThreadDoWork waiting for devices
+[ 10100.122] input-thread: InputThreadDoWork waiting for devices
+[ 10100.196] input-thread: InputThreadDoWork waiting for devices
+[ 10100.216] input-thread: InputThreadDoWork waiting for devices
+[ 10100.226] input-thread: InputThreadDoWork waiting for devices
+[ 10100.314] input-thread: InputThreadDoWork waiting for devices
+[ 10100.393] input-thread: InputThreadDoWork waiting for devices
+[ 10100.393] ProcessActionEvent(100,0x7ffde6b63264)
+[ 10100.393] FixKeyState: Key 69 down
+[ 10100.393] FixKeyState: Key 69 down
+[ 10100.393] xf86VTSwitch()
+[ 10100.393] xf86VTSwitch: Leaving, xf86Exiting is FALSE
+[ 10100.394] (**) Option "fd" "37"
+[ 10100.394] (II) event0  - Power Button: device removed
+[ 10100.394] (**) Option "fd" "32"
+[ 10100.394] (II) event1  - Sleep Button: device removed
+[ 10100.394] (**) Option "fd" "36"
+[ 10100.394] (II) event5  - Video Bus: device removed
+[ 10100.394] (**) Option "fd" "31"
+[ 10100.394] (II) event4  - VirtualBox USB Tablet: device removed
+[ 10100.394] (**) Option "fd" "35"
+[ 10100.394] (II) event2  - AT Translated Set 2 keyboard: device removed
+[ 10100.395] input-thread: unregistered device: 22
+[ 10100.395] (**) Option "fd" "33"
+[ 10100.395] (II) event3  - ImExPS/2 Generic Explorer Mouse: device removed
+[ 10100.395] (II) AIGLX: Suspending AIGLX clients for VT switch
+[ 10100.395] input-thread: InputThreadDoWork waiting for devices
+[ 10100.422] (II) systemd-logind: got pause for 13:68
+[ 10100.422] (II) systemd-logind: got pause for 13:65
+[ 10100.422] (II) systemd-logind: got pause for 13:67
+[ 10100.422] (II) systemd-logind: got pause for 13:66
+[ 10100.422] (II) systemd-logind: got pause for 13:69
+[ 10100.422] (II) systemd-logind: got pause for 13:64
+[ 10128.334] xf86VTSwitch()
+[ 10128.381] (II) systemd-logind: got resume for 13:68
+[ 10128.381] xf86VTSwitch()
+[ 10128.464] (II) systemd-logind: got resume for 13:65
+[ 10128.464] xf86VTSwitch()
+[ 10128.676] (II) systemd-logind: got resume for 13:67
+[ 10128.676] (II) systemd-logind: got resume for 226:0
+[ 10128.676] xf86VTSwitch: Entering
+[ 10128.676] (II) AIGLX: Resuming AIGLX clients after VT switch
+[ 10128.680] FlushingSerial
+[ 10128.685] (II) event1  - Sleep Button: is tagged by udev as: Keyboard
+[ 10128.685] (II) event1  - Sleep Button: device is a keyboard
+[ 10128.687] input-thread: registered device 22
+[ 10128.689] FlushingSerial
+[ 10128.698] (II) event4  - VirtualBox USB Tablet: is tagged by udev as: Mouse
+[ 10128.700] (II) event4  - VirtualBox USB Tablet: device is a pointer
+[ 10128.703] FlushingSerial
+[ 10128.707] (II) event3  - ImExPS/2 Generic Explorer Mouse: is tagged by udev as: Mouse
+[ 10128.708] (II) event3  - ImExPS/2 Generic Explorer Mouse: device is a pointer
+[ 10128.709] input-thread: InputThreadDoWork waiting for devices
+[ 10128.709] (II) systemd-logind: got resume for 13:66
+[ 10128.710] FlushingSerial
+[ 10128.711] (II) event2  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[ 10128.712] (II) event2  - AT Translated Set 2 keyboard: device is a keyboard
+[ 10128.730] (II) systemd-logind: got resume for 13:69
+[ 10128.730] FlushingSerial
+[ 10128.732] (II) event5  - Video Bus: is tagged by udev as: Keyboard
+[ 10128.733] (II) event5  - Video Bus: device is a keyboard
+[ 10128.762] (II) systemd-logind: got resume for 13:64
+[ 10128.762] FlushingSerial
+[ 10128.764] (II) event0  - Power Button: is tagged by udev as: Keyboard
+[ 10128.764] (II) event0  - Power Button: device is a keyboard
+[ 10129.216] input-thread: InputThreadDoWork waiting for devices
+[ 10129.378] input-thread: InputThreadDoWork waiting for devices
+[ 10129.561] input-thread: InputThreadDoWork waiting for devices
+[ 10129.725] input-thread: InputThreadDoWork waiting for devices
+[ 10129.837] input-thread: InputThreadDoWork waiting for devices
+[ 10129.995] input-thread: InputThreadDoWork waiting for devices
+[ 10130.093] input-thread: InputThreadDoWork waiting for devices
+[ 10130.295] input-thread: InputThreadDoWork waiting for devices
+[ 10130.359] input-thread: InputThreadDoWork waiting for devices
+[ 10130.559] input-thread: InputThreadDoWork waiting for devices
+[ 10130.624] input-thread: InputThreadDoWork waiting for devices
+[ 10130.803] input-thread: InputThreadDoWork waiting for devices
+[ 10130.889] input-thread: InputThreadDoWork waiting for devices
+[ 10131.067] input-thread: InputThreadDoWork waiting for devices
+[ 10131.144] input-thread: InputThreadDoWork waiting for devices
+[ 10131.394] input-thread: InputThreadDoWork waiting for devices
+[ 10131.428] input-thread: InputThreadDoWork waiting for devices
+[ 10131.461] input-thread: InputThreadDoWork waiting for devices
+[ 10131.494] input-thread: InputThreadDoWork waiting for devices
+[ 10131.512] input-thread: InputThreadDoWork waiting for devices
+[ 10131.545] input-thread: InputThreadDoWork waiting for devices
+[ 10131.628] input-thread: InputThreadDoWork waiting for devices
+[ 10131.640] input-thread: InputThreadDoWork waiting for devices
+[ 10131.709] input-thread: InputThreadDoWork waiting for devices
+[ 10131.716] input-thread: InputThreadDoWork waiting for devices
+[ 10131.780] input-thread: InputThreadDoWork waiting for devices
+[ 10131.788] input-thread: InputThreadDoWork waiting for devices
+[ 10131.855] input-thread: InputThreadDoWork waiting for devices
+[ 10131.862] input-thread: InputThreadDoWork waiting for devices
+[ 10131.924] input-thread: InputThreadDoWork waiting for devices
+[ 10131.931] input-thread: InputThreadDoWork waiting for devices
+[ 10131.993] input-thread: InputThreadDoWork waiting for devices
+[ 10132.001] input-thread: InputThreadDoWork waiting for devices
+[ 10132.094] input-thread: InputThreadDoWork waiting for devices
+[ 10132.101] input-thread: InputThreadDoWork waiting for devices
+[ 10132.154] input-thread: InputThreadDoWork waiting for devices
+[ 10132.185] input-thread: InputThreadDoWork waiting for devices
+[ 10132.196] input-thread: InputThreadDoWork waiting for devices
+[ 10132.287] input-thread: InputThreadDoWork waiting for devices
+[ 10132.297] input-thread: InputThreadDoWork waiting for devices
+[ 10132.307] input-thread: InputThreadDoWork waiting for devices
+[ 10132.307] ProcessActionEvent(100,0x7ffde6b63264)
+[ 10132.307] FixKeyState: Key 68 down
+[ 10132.307] FixKeyState: Key 68 down
+[ 10132.405] input-thread: InputThreadDoWork waiting for devices
+[ 10132.497] input-thread: InputThreadDoWork waiting for devices
+[ 10132.498] ProcessActionEvent(100,0x7ffde6b63264)
+[ 10132.498] FixKeyState: Key 68 down
+[ 10132.498] FixKeyState: Key 68 down
+[ 10132.610] input-thread: InputThreadDoWork waiting for devices
+[ 10132.752] input-thread: InputThreadDoWork waiting for devices
+[ 10132.765] input-thread: InputThreadDoWork waiting for devices
+[ 10132.768] input-thread: InputThreadDoWork waiting for devices
+[ 10133.018] input-thread: InputThreadDoWork waiting for devices
+[ 10133.051] input-thread: InputThreadDoWork waiting for devices
+[ 10133.085] input-thread: InputThreadDoWork waiting for devices
+[ 10133.118] input-thread: InputThreadDoWork waiting for devices
+[ 10133.151] input-thread: InputThreadDoWork waiting for devices
+[ 10133.169] input-thread: InputThreadDoWork waiting for devices
+[ 10133.216] input-thread: InputThreadDoWork waiting for devices
+[ 10133.330] input-thread: InputThreadDoWork waiting for devices
+[ 10133.413] input-thread: InputThreadDoWork waiting for devices
+[ 10133.515] input-thread: InputThreadDoWork waiting for devices
+[ 10133.609] input-thread: InputThreadDoWork waiting for devices
+[ 10133.757] input-thread: InputThreadDoWork waiting for devices
+[ 10133.809] input-thread: InputThreadDoWork waiting for devices
+[ 10133.905] input-thread: InputThreadDoWork waiting for devices
+[ 10133.940] input-thread: InputThreadDoWork waiting for devices
+[ 10134.027] input-thread: InputThreadDoWork waiting for devices
+[ 10134.111] input-thread: InputThreadDoWork waiting for devices
+[ 10134.220] input-thread: InputThreadDoWork waiting for devices
+[ 10134.326] input-thread: InputThreadDoWork waiting for devices
+[ 10134.454] input-thread: InputThreadDoWork waiting for devices
+[ 10134.468] input-thread: InputThreadDoWork waiting for devices
+[ 10134.543] input-thread: InputThreadDoWork waiting for devices
+[ 10134.566] input-thread: InputThreadDoWork waiting for devices
+[ 10134.637] input-thread: InputThreadDoWork waiting for devices
+[ 10134.682] input-thread: InputThreadDoWork waiting for devices
+[ 10134.772] input-thread: InputThreadDoWork waiting for devices
+[ 10134.946] input-thread: InputThreadDoWork waiting for devices
+[ 10135.099] input-thread: InputThreadDoWork waiting for devices
+[ 10135.272] input-thread: InputThreadDoWork waiting for devices
+[ 10135.301] input-thread: InputThreadDoWork waiting for devices
+[ 10135.415] input-thread: InputThreadDoWork waiting for devices
+[ 10135.424] input-thread: InputThreadDoWork waiting for devices
+[ 10135.509] input-thread: InputThreadDoWork waiting for devices
+[ 10135.510] input-thread: InputThreadDoWork waiting for devices
+[ 10135.599] input-thread: InputThreadDoWork waiting for devices
+[ 10135.611] input-thread: InputThreadDoWork waiting for devices
+[ 10135.643] input-thread: InputThreadDoWork waiting for devices
+[ 10135.643] ProcessActionEvent(100,0x7ffde6b63264)
+[ 10135.643] FixKeyState: Key 68 down
+[ 10135.644] FixKeyState: Key 68 down
+[ 10135.691] input-thread: InputThreadDoWork waiting for devices
+[ 10135.877] input-thread: InputThreadDoWork waiting for devices
+[ 10136.306] input-thread: InputThreadDoWork waiting for devices
+[ 10136.355] input-thread: InputThreadDoWork waiting for devices
+[ 10136.426] input-thread: InputThreadDoWork waiting for devices
+[ 10136.494] input-thread: InputThreadDoWork waiting for devices
+[ 10136.785] input-thread: InputThreadDoWork waiting for devices
+[ 10136.855] input-thread: InputThreadDoWork waiting for devices
+[ 10136.929] input-thread: InputThreadDoWork waiting for devices
+[ 10136.999] input-thread: InputThreadDoWork waiting for devices
+[ 10137.079] input-thread: InputThreadDoWork waiting for devices
+[ 10137.171] input-thread: InputThreadDoWork waiting for devices
+[ 10137.324] input-thread: InputThreadDoWork waiting for devices
+[ 10137.448] input-thread: InputThreadDoWork waiting for devices
+[ 10137.476] input-thread: InputThreadDoWork waiting for devices
+[ 10137.586] input-thread: InputThreadDoWork waiting for devices
+[ 10137.603] input-thread: InputThreadDoWork waiting for devices
+[ 10137.608] input-thread: InputThreadDoWork waiting for devices
+[ 10137.706] input-thread: InputThreadDoWork waiting for devices
+[ 10137.726] input-thread: InputThreadDoWork waiting for devices
+[ 10137.826] input-thread: InputThreadDoWork waiting for devices
+[ 10137.831] input-thread: InputThreadDoWork waiting for devices
+[ 10137.917] input-thread: InputThreadDoWork waiting for devices
+[ 10137.938] input-thread: InputThreadDoWork waiting for devices
+[ 10138.041] input-thread: InputThreadDoWork waiting for devices
+[ 10138.064] input-thread: InputThreadDoWork waiting for devices
+[ 10138.138] input-thread: InputThreadDoWork waiting for devices
+[ 10138.151] input-thread: InputThreadDoWork waiting for devices
+[ 10138.224] input-thread: InputThreadDoWork waiting for devices
+[ 10138.383] input-thread: InputThreadDoWork waiting for devices
+[ 10138.481] input-thread: InputThreadDoWork waiting for devices
+[ 10138.710] input-thread: InputThreadDoWork waiting for devices
+[ 10138.730] input-thread: InputThreadDoWork waiting for devices
+[ 10138.992] input-thread: InputThreadDoWork waiting for devices
+[ 10139.056] input-thread: InputThreadDoWork waiting for devices
+[ 10139.257] input-thread: InputThreadDoWork waiting for devices
+[ 10139.257] ProcessActionEvent(100,0x7ffde6b63264)
+[ 10139.257] FixKeyState: Key 68 down
+[ 10139.257] FixKeyState: Key 68 down
+[ 10139.446] input-thread: InputThreadDoWork waiting for devices
+[ 10139.718] input-thread: InputThreadDoWork waiting for devices
+[ 10139.718] ProcessActionEvent(100,0x7ffde6b63264)
+[ 10139.718] FixKeyState: Key 67 down
+[ 10139.718] FixKeyState: Key 67 down
+[ 10139.719] xf86VTSwitch()
+[ 10139.719] xf86VTSwitch: Leaving, xf86Exiting is FALSE
+[ 10139.719] (**) Option "fd" "38"
+[ 10139.719] (II) event0  - Power Button: device removed
+[ 10139.719] (**) Option "fd" "32"
+[ 10139.719] (II) event1  - Sleep Button: device removed
+[ 10139.719] (**) Option "fd" "37"
+[ 10139.720] (II) event5  - Video Bus: device removed
+[ 10139.720] (**) Option "fd" "31"
+[ 10139.720] (II) event4  - VirtualBox USB Tablet: device removed
+[ 10139.720] (**) Option "fd" "36"
+[ 10139.720] (II) event2  - AT Translated Set 2 keyboard: device removed
+[ 10139.720] input-thread: unregistered device: 22
+[ 10139.720] (**) Option "fd" "35"
+[ 10139.720] (II) event3  - ImExPS/2 Generic Explorer Mouse: device removed
+[ 10139.720] (II) AIGLX: Suspending AIGLX clients for VT switch
+[ 10139.720] input-thread: InputThreadDoWork waiting for devices
+[ 10139.728] (II) systemd-logind: got pause for 13:68
+[ 10139.731] (II) systemd-logind: got pause for 13:65
+[ 10139.731] (II) systemd-logind: got pause for 13:67
+[ 10139.731] (II) systemd-logind: got pause for 13:66
+[ 10139.731] (II) systemd-logind: got pause for 13:69
+[ 10139.731] (II) systemd-logind: got pause for 13:64
+[ 10152.373] client(200000): Released pid(12981).
+[ 10152.373] client(200000): Released cmdline(xinit) and cmdargs(/home/pinkhorse/.xinitrc -- /etc/X11/xinit/xserverrc :2 -auth /tmp/serverauth.5Qk5NaGBxl).
+[ 10152.374] client(400000): Released pid(12985).
+[ 10152.374] client(400000): Released cmdline(dwm) and cmdargs(NULL).
+[ 10152.377] (dix) removing device 2
+[ 10152.377] (dix) removing device 3
+[ 10152.377] (dix) removing device 5
+[ 10152.377] (dix) removing device 4
+[ 10152.377] (dix) removing device 11
+[ 10152.377] (II) UnloadModule: "libinput"
+[ 10152.377] (II) systemd-logind: releasing fd for 13:67
+[ 10152.807] (EE) systemd-logind: failed to release device: Unknown object '/org/freedesktop/login1/session/_33'.
+[ 10152.807] (dix) removing device 10
+[ 10152.807] (II) UnloadModule: "libinput"
+[ 10152.807] (II) systemd-logind: releasing fd for 13:66
+[ 10152.808] (EE) systemd-logind: failed to release device: Unknown object '/org/freedesktop/login1/session/_33'.
+[ 10152.808] (dix) removing device 9
+[ 10152.808] (II) UnloadModule: "libinput"
+[ 10152.808] (II) systemd-logind: releasing fd for 13:68
+[ 10152.809] (EE) systemd-logind: failed to release device: Unknown object '/org/freedesktop/login1/session/_33'.
+[ 10152.809] (dix) removing device 8
+[ 10152.809] (II) UnloadModule: "libinput"
+[ 10152.809] (II) systemd-logind: releasing fd for 13:69
+[ 10152.810] (EE) systemd-logind: failed to release device: Unknown object '/org/freedesktop/login1/session/_33'.
+[ 10152.810] (dix) removing device 7
+[ 10152.810] (II) UnloadModule: "libinput"
+[ 10152.810] (II) systemd-logind: releasing fd for 13:65
+[ 10152.811] (EE) systemd-logind: failed to release device: Unknown object '/org/freedesktop/login1/session/_33'.
+[ 10152.811] (dix) removing device 6
+[ 10152.811] (II) UnloadModule: "libinput"
+[ 10152.811] (II) systemd-logind: releasing fd for 13:64
+[ 10152.812] (EE) systemd-logind: failed to release device: Unknown object '/org/freedesktop/login1/session/_33'.
+[ 10152.814] client(0): Released pid(12982).
+[ 10152.814] client(0): Released cmdline(/usr/libexec/Xorg) and cmdargs(-nolisten tcp -keeptty :2 -auth /tmp/serverauth.5Qk5NaGBxl vt2).
+[ 10152.819] (WW) xf86CloseConsole: KDSETMODE failed: Input/output error
+[ 10152.819] (WW) xf86CloseConsole: VT_GETMODE failed: Input/output error
+[ 10152.819] (WW) xf86OpenConsole: VT_GETSTATE failed: Input/output error
+[ 10152.820] (EE) systemd-logind: ReleaseControl failed: Unknown object '/org/freedesktop/login1/session/_33'.
+[ 10152.820] (II) Server terminated successfully (0). Closing log file.

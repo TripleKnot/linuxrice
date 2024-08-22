@@ -1,0 +1,293 @@
+[  1184.698] 
+X.Org X Server 1.21.1.13
+X Protocol Version 11, Revision 0
+[  1184.700] Current Operating System: Linux gentle 6.10.3-artix1-2 #1 SMP PREEMPT_DYNAMIC Wed, 07 Aug 2024 06:00:42 +0000 x86_64
+[  1184.700] Kernel command line: BOOT_IMAGE=/vmlinuz-linux root=UUID=b63003f4-a8f0-44b3-b4ef-edbf25e35322 rw loglevel=3 quiet
+[  1184.702]  
+[  1184.702] Current version of pixman: 0.43.4
+[  1184.703] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[  1184.703] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[  1184.706] (==) Log file: "/home/pinkhorse/.local/share/xorg/Xorg.1.log", Time: Tue Aug 13 17:31:49 2024
+[  1184.707] (==) Using config directory: "/etc/X11/xorg.conf.d"
+[  1184.707] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[  1184.707] (==) No Layout section.  Using the first Screen section.
+[  1184.707] (==) No screen section available. Using defaults.
+[  1184.707] (**) |-->Screen "Default Screen Section" (0)
+[  1184.707] (**) |   |-->Monitor "<default monitor>"
+[  1184.708] (==) No monitor specified for screen "Default Screen Section".
+	Using a default monitor configuration.
+[  1184.708] (**) Allowing byte-swapped clients
+[  1184.708] (==) Automatically adding devices
+[  1184.708] (==) Automatically enabling devices
+[  1184.708] (==) Automatically adding GPU devices
+[  1184.708] (==) Automatically binding GPU devices
+[  1184.708] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[  1184.708] (WW) The directory "/usr/share/fonts/misc" does not exist.
+[  1184.708] 	Entry deleted from font path.
+[  1184.708] (WW) `fonts.dir' not found (or not valid) in "/usr/share/fonts/TTF".
+[  1184.708] 	Entry deleted from font path.
+[  1184.708] 	(Run 'mkfontdir' on "/usr/share/fonts/TTF").
+[  1184.708] (WW) The directory "/usr/share/fonts/OTF" does not exist.
+[  1184.708] 	Entry deleted from font path.
+[  1184.708] (WW) The directory "/usr/share/fonts/Type1" does not exist.
+[  1184.708] 	Entry deleted from font path.
+[  1184.708] (WW) The directory "/usr/share/fonts/100dpi" does not exist.
+[  1184.708] 	Entry deleted from font path.
+[  1184.708] (WW) The directory "/usr/share/fonts/75dpi" does not exist.
+[  1184.708] 	Entry deleted from font path.
+[  1184.708] (==) FontPath set to:
+	
+[  1184.708] (==) ModulePath set to "/usr/lib/xorg/modules"
+[  1184.708] (II) The server relies on udev to provide the list of input devices.
+	If no devices become available, reconfigure udev or disable AutoAddDevices.
+[  1184.708] (II) Module ABI versions:
+[  1184.708] 	X.Org ANSI C Emulation: 0.4
+[  1184.708] 	X.Org Video Driver: 25.2
+[  1184.708] 	X.Org XInput driver : 24.4
+[  1184.708] 	X.Org Server Extension : 10.0
+[  1184.710] (++) using VT number 1
+
+[  1184.712] (II) systemd-logind: took control of session /org/freedesktop/login1/session/_34
+[  1184.715] (II) xfree86: Adding drm device (/dev/dri/card0)
+[  1184.715] (II) Platform probe for /sys/devices/pci0000:00/0000:00:02.0/drm/card0
+[  1184.716] (II) systemd-logind: got fd for /dev/dri/card0 226:0 fd 13 paused 0
+[  1184.719] (--) PCI:*(0@0:2:0) 15ad:0405:15ad:0405 rev 0, Mem @ 0xe0000000/16777216, 0xf0000000/2097152, I/O @ 0x0000d010/16, BIOS @ 0x????????/131072
+[  1184.719] (WW) Open ACPI failed (/var/run/acpid.socket) (No such file or directory)
+[  1184.719] (II) LoadModule: "glx"
+[  1184.720] (II) Loading /usr/lib/xorg/modules/extensions/libglx.so
+[  1184.722] (II) Module glx: vendor="X.Org Foundation"
+[  1184.722] 	compiled for 1.21.1.13, module version = 1.0.0
+[  1184.722] 	ABI class: X.Org Server Extension, version 10.0
+[  1184.723] (==) Matched vmware as autoconfigured driver 0
+[  1184.723] (==) Matched modesetting as autoconfigured driver 1
+[  1184.723] (==) Matched fbdev as autoconfigured driver 2
+[  1184.723] (==) Matched vesa as autoconfigured driver 3
+[  1184.723] (==) Assigned the driver to the xf86ConfigLayout
+[  1184.723] (II) LoadModule: "vmware"
+[  1184.723] (WW) Warning, couldn't open module vmware
+[  1184.723] (EE) Failed to load module "vmware" (module does not exist, 0)
+[  1184.723] (II) LoadModule: "modesetting"
+[  1184.723] (II) Loading /usr/lib/xorg/modules/drivers/modesetting_drv.so
+[  1184.724] (II) Module modesetting: vendor="X.Org Foundation"
+[  1184.724] 	compiled for 1.21.1.13, module version = 1.21.1
+[  1184.724] 	Module class: X.Org Video Driver
+[  1184.724] 	ABI class: X.Org Video Driver, version 25.2
+[  1184.724] (II) LoadModule: "fbdev"
+[  1184.724] (WW) Warning, couldn't open module fbdev
+[  1184.724] (EE) Failed to load module "fbdev" (module does not exist, 0)
+[  1184.724] (II) LoadModule: "vesa"
+[  1184.724] (WW) Warning, couldn't open module vesa
+[  1184.724] (EE) Failed to load module "vesa" (module does not exist, 0)
+[  1184.724] (II) modesetting: Driver for Modesetting Kernel Drivers: kms
+[  1184.724] (II) modeset(0): using drv /dev/dri/card0
+[  1184.725] (WW) VGA arbiter: cannot open kernel arbiter, no multi-card support
+[  1184.725] (II) modeset(0): Creating default Display subsection in Screen section
+	"Default Screen Section" for depth/fbbpp 24/32
+[  1184.725] (==) modeset(0): Depth 24, (==) framebuffer bpp 32
+[  1184.725] (==) modeset(0): RGB weight 888
+[  1184.725] (==) modeset(0): Default visual is TrueColor
+[  1184.725] (II) Loading sub module "glamoregl"
+[  1184.725] (II) LoadModule: "glamoregl"
+[  1184.725] (II) Loading /usr/lib/xorg/modules/libglamoregl.so
+[  1184.730] (II) Module glamoregl: vendor="X.Org Foundation"
+[  1184.730] 	compiled for 1.21.1.13, module version = 1.0.1
+[  1184.730] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[  1184.815] (II) modeset(0): Refusing to try glamor on llvmpipe
+[  1184.818] (II) modeset(0): glamor initialization failed
+[  1184.818] (II) modeset(0): ShadowFB: preferred NO, enabled NO
+[  1184.818] (II) modeset(0): Output Virtual-1 has no monitor section
+[  1184.818] (II) modeset(0): Output Virtual-2 has no monitor section
+[  1184.818] (II) modeset(0): Output Virtual-3 has no monitor section
+[  1184.818] (II) modeset(0): Output Virtual-4 has no monitor section
+[  1184.818] (II) modeset(0): Output Virtual-5 has no monitor section
+[  1184.818] (II) modeset(0): Output Virtual-6 has no monitor section
+[  1184.818] (II) modeset(0): Output Virtual-7 has no monitor section
+[  1184.818] (II) modeset(0): Output Virtual-8 has no monitor section
+[  1184.819] (II) modeset(0): EDID for output Virtual-1
+[  1184.819] (II) modeset(0): Printing probed modes for output Virtual-1
+[  1184.819] (II) modeset(0): Modeline "1280x800"x60.0   81.51  1280 1330 1380 1430  800 850 900 950 -hsync +vsync (57.0 kHz eP)
+[  1184.819] (II) modeset(0): Modeline "2560x1600"x60.0  348.50  2560 2752 3032 3504  1600 1603 1609 1658 -hsync +vsync (99.5 kHz e)
+[  1184.819] (II) modeset(0): Modeline "2560x1600"x60.0  268.50  2560 2608 2640 2720  1600 1603 1609 1646 +hsync -vsync (98.7 kHz e)
+[  1184.819] (II) modeset(0): Modeline "1920x1440"x60.0  234.00  1920 2048 2256 2600  1440 1441 1444 1500 -hsync +vsync (90.0 kHz e)
+[  1184.819] (II) modeset(0): Modeline "1856x1392"x60.0  218.25  1856 1952 2176 2528  1392 1393 1396 1439 -hsync +vsync (86.3 kHz e)
+[  1184.819] (II) modeset(0): Modeline "1792x1344"x60.0  204.75  1792 1920 2120 2448  1344 1345 1348 1394 -hsync +vsync (83.6 kHz e)
+[  1184.819] (II) modeset(0): Modeline "2048x1152"x60.0  162.00  2048 2074 2154 2250  1152 1153 1156 1200 +hsync +vsync (72.0 kHz e)
+[  1184.819] (II) modeset(0): Modeline "1920x1200"x59.9  193.25  1920 2056 2256 2592  1200 1203 1209 1245 -hsync +vsync (74.6 kHz e)
+[  1184.819] (II) modeset(0): Modeline "1920x1200"x60.0  154.00  1920 1968 2000 2080  1200 1203 1209 1235 +hsync -vsync (74.0 kHz e)
+[  1184.819] (II) modeset(0): Modeline "1920x1080"x60.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 -hsync -vsync (67.5 kHz e)
+[  1184.819] (II) modeset(0): Modeline "1600x1200"x60.0  162.00  1600 1664 1856 2160  1200 1201 1204 1250 +hsync +vsync (75.0 kHz e)
+[  1184.819] (II) modeset(0): Modeline "1680x1050"x60.0  146.25  1680 1784 1960 2240  1050 1053 1059 1089 -hsync +vsync (65.3 kHz e)
+[  1184.819] (II) modeset(0): Modeline "1680x1050"x59.9  119.00  1680 1728 1760 1840  1050 1053 1059 1080 +hsync -vsync (64.7 kHz e)
+[  1184.819] (II) modeset(0): Modeline "1400x1050"x60.0  121.75  1400 1488 1632 1864  1050 1053 1057 1089 -hsync +vsync (65.3 kHz e)
+[  1184.819] (II) modeset(0): Modeline "1400x1050"x59.9  101.00  1400 1448 1480 1560  1050 1053 1057 1080 +hsync -vsync (64.7 kHz e)
+[  1184.819] (II) modeset(0): Modeline "1600x900"x60.0  108.00  1600 1624 1704 1800  900 901 904 1000 +hsync +vsync (60.0 kHz e)
+[  1184.819] (II) modeset(0): Modeline "1280x1024"x60.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[  1184.819] (II) modeset(0): Modeline "1440x900"x59.9  106.50  1440 1520 1672 1904  900 903 909 934 -hsync +vsync (55.9 kHz e)
+[  1184.819] (II) modeset(0): Modeline "1440x900"x59.9   88.75  1440 1488 1520 1600  900 903 909 926 +hsync -vsync (55.5 kHz e)
+[  1184.819] (II) modeset(0): Modeline "1280x960"x60.0  108.00  1280 1376 1488 1800  960 961 964 1000 +hsync +vsync (60.0 kHz e)
+[  1184.819] (II) modeset(0): Modeline "1366x768"x59.8   85.50  1366 1436 1579 1792  768 771 774 798 +hsync +vsync (47.7 kHz e)
+[  1184.819] (II) modeset(0): Modeline "1366x768"x60.0   72.00  1366 1380 1436 1500  768 769 772 800 +hsync +vsync (48.0 kHz e)
+[  1184.819] (II) modeset(0): Modeline "1360x768"x60.0   85.50  1360 1424 1536 1792  768 771 777 795 +hsync +vsync (47.7 kHz e)
+[  1184.819] (II) modeset(0): Modeline "1280x800"x59.8   83.50  1280 1352 1480 1680  800 803 809 831 -hsync +vsync (49.7 kHz e)
+[  1184.819] (II) modeset(0): Modeline "1280x800"x59.9   71.00  1280 1328 1360 1440  800 803 809 823 +hsync -vsync (49.3 kHz e)
+[  1184.819] (II) modeset(0): Modeline "1280x768"x59.9   79.50  1280 1344 1472 1664  768 771 778 798 -hsync +vsync (47.8 kHz e)
+[  1184.819] (II) modeset(0): Modeline "1280x768"x60.0   68.25  1280 1328 1360 1440  768 771 778 790 +hsync -vsync (47.4 kHz e)
+[  1184.819] (II) modeset(0): Modeline "1280x720"x60.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[  1184.819] (II) modeset(0): Modeline "1024x768"x60.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[  1184.819] (II) modeset(0): Modeline "800x600"x60.3   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[  1184.819] (II) modeset(0): Modeline "800x600"x56.2   36.00  800 824 896 1024  600 601 603 625 +hsync +vsync (35.2 kHz e)
+[  1184.819] (II) modeset(0): Modeline "848x480"x60.0   33.75  848 864 976 1088  480 486 494 517 +hsync +vsync (31.0 kHz e)
+[  1184.819] (II) modeset(0): Modeline "640x480"x59.9   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[  1184.819] (II) modeset(0): EDID for output Virtual-2
+[  1184.819] (II) modeset(0): EDID for output Virtual-3
+[  1184.819] (II) modeset(0): EDID for output Virtual-4
+[  1184.819] (II) modeset(0): EDID for output Virtual-5
+[  1184.819] (II) modeset(0): EDID for output Virtual-6
+[  1184.819] (II) modeset(0): EDID for output Virtual-7
+[  1184.819] (II) modeset(0): EDID for output Virtual-8
+[  1184.819] (II) modeset(0): Output Virtual-1 connected
+[  1184.819] (II) modeset(0): Output Virtual-2 disconnected
+[  1184.819] (II) modeset(0): Output Virtual-3 disconnected
+[  1184.819] (II) modeset(0): Output Virtual-4 disconnected
+[  1184.819] (II) modeset(0): Output Virtual-5 disconnected
+[  1184.819] (II) modeset(0): Output Virtual-6 disconnected
+[  1184.819] (II) modeset(0): Output Virtual-7 disconnected
+[  1184.819] (II) modeset(0): Output Virtual-8 disconnected
+[  1184.819] (II) modeset(0): Using exact sizes for initial modes
+[  1184.819] (II) modeset(0): Output Virtual-1 using initial mode 1280x800 +0+0
+[  1184.819] (==) modeset(0): Using gamma correction (1.0, 1.0, 1.0)
+[  1184.819] (==) modeset(0): DPI set to (96, 96)
+[  1184.819] (II) Loading sub module "fb"
+[  1184.819] (II) LoadModule: "fb"
+[  1184.819] (II) Module "fb" already built-in
+[  1184.819] (==) modeset(0): Backing store enabled
+[  1184.819] (==) modeset(0): Silken mouse enabled
+[  1184.820] (II) modeset(0): Initializing kms color map for depth 24, 8 bpc.
+[  1184.820] (==) modeset(0): DPMS enabled
+[  1184.820] (II) Initializing extension Generic Event Extension
+[  1184.820] (II) Initializing extension SHAPE
+[  1184.820] (II) Initializing extension MIT-SHM
+[  1184.821] (II) Initializing extension XInputExtension
+[  1184.821] (II) Initializing extension XTEST
+[  1184.821] (II) Initializing extension BIG-REQUESTS
+[  1184.821] (II) Initializing extension SYNC
+[  1184.821] (II) Initializing extension XKEYBOARD
+[  1184.822] (II) Initializing extension XC-MISC
+[  1184.822] (II) Initializing extension SECURITY
+[  1184.822] (II) Initializing extension XFIXES
+[  1184.822] (II) Initializing extension RENDER
+[  1184.822] (II) Initializing extension RANDR
+[  1184.823] (II) Initializing extension COMPOSITE
+[  1184.823] (II) Initializing extension DAMAGE
+[  1184.823] (II) Initializing extension MIT-SCREEN-SAVER
+[  1184.824] (II) Initializing extension DOUBLE-BUFFER
+[  1184.824] (II) Initializing extension RECORD
+[  1184.824] (II) Initializing extension DPMS
+[  1184.824] (II) Initializing extension Present
+[  1184.824] (II) Initializing extension DRI3
+[  1184.824] (II) Initializing extension X-Resource
+[  1184.824] (II) Initializing extension XVideo
+[  1184.825] (II) Initializing extension XVideo-MotionCompensation
+[  1184.825] (II) Initializing extension GLX
+[  1184.825] (II) AIGLX: Screen 0 is not DRI2 capable
+[  1184.834] (II) IGLX: Loaded and initialized swrast
+[  1184.834] (II) GLX: Initialized DRISWRAST GL provider for screen 0
+[  1184.834] (II) Initializing extension XFree86-VidModeExtension
+[  1184.834] (II) Initializing extension XFree86-DGA
+[  1184.835] (II) Initializing extension XFree86-DRI
+[  1184.835] (II) Initializing extension DRI2
+[  1184.835] (II) modeset(0): Damage tracking initialized
+[  1184.835] (II) modeset(0): Setting screen physical size to 338 x 211
+[  1184.895] (II) config/udev: Adding input device Power Button (/dev/input/event0)
+[  1184.895] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[  1184.895] (II) LoadModule: "libinput"
+[  1184.895] (II) Loading /usr/lib/xorg/modules/input/libinput_drv.so
+[  1184.896] (II) Module libinput: vendor="X.Org Foundation"
+[  1184.896] 	compiled for 1.21.1.13, module version = 1.4.0
+[  1184.896] 	Module class: X.Org XInput Driver
+[  1184.896] 	ABI class: X.Org XInput driver, version 24.4
+[  1184.896] (II) Using input driver 'libinput' for 'Power Button'
+[  1184.897] (II) systemd-logind: got fd for /dev/input/event0 13:64 fd 21 paused 0
+[  1184.897] (**) Power Button: always reports core events
+[  1184.897] (**) Option "Device" "/dev/input/event0"
+[  1184.899] (II) event0  - Power Button: is tagged by udev as: Keyboard
+[  1184.899] (II) event0  - Power Button: device is a keyboard
+[  1184.899] (II) event0  - Power Button: device removed
+[  1184.899] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXPWRBN:00/input/input0/event0"
+[  1184.899] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 6)
+[  1184.901] (II) event0  - Power Button: is tagged by udev as: Keyboard
+[  1184.901] (II) event0  - Power Button: device is a keyboard
+[  1184.901] (II) config/udev: Adding input device Sleep Button (/dev/input/event1)
+[  1184.901] (**) Sleep Button: Applying InputClass "libinput keyboard catchall"
+[  1184.901] (II) Using input driver 'libinput' for 'Sleep Button'
+[  1184.902] (II) systemd-logind: got fd for /dev/input/event1 13:65 fd 24 paused 0
+[  1184.902] (**) Sleep Button: always reports core events
+[  1184.902] (**) Option "Device" "/dev/input/event1"
+[  1184.902] (II) event1  - Sleep Button: is tagged by udev as: Keyboard
+[  1184.903] (II) event1  - Sleep Button: device is a keyboard
+[  1184.903] (II) event1  - Sleep Button: device removed
+[  1184.903] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSLPBN:00/input/input1/event1"
+[  1184.903] (II) XINPUT: Adding extended input device "Sleep Button" (type: KEYBOARD, id 7)
+[  1184.904] (II) event1  - Sleep Button: is tagged by udev as: Keyboard
+[  1184.904] (II) event1  - Sleep Button: device is a keyboard
+[  1184.904] (II) config/udev: Adding input device Video Bus (/dev/input/event4)
+[  1184.904] (**) Video Bus: Applying InputClass "libinput keyboard catchall"
+[  1184.904] (II) Using input driver 'libinput' for 'Video Bus'
+[  1184.905] (II) systemd-logind: got fd for /dev/input/event4 13:68 fd 25 paused 0
+[  1184.905] (**) Video Bus: always reports core events
+[  1184.905] (**) Option "Device" "/dev/input/event4"
+[  1184.906] (II) event4  - Video Bus: is tagged by udev as: Keyboard
+[  1184.906] (II) event4  - Video Bus: device is a keyboard
+[  1184.906] (II) event4  - Video Bus: device removed
+[  1184.906] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A03:00/LNXVIDEO:00/input/input5/event4"
+[  1184.906] (II) XINPUT: Adding extended input device "Video Bus" (type: KEYBOARD, id 8)
+[  1184.907] (II) event4  - Video Bus: is tagged by udev as: Keyboard
+[  1184.907] (II) event4  - Video Bus: device is a keyboard
+[  1184.908] (II) config/udev: Adding input device VirtualBox mouse integration (/dev/input/event6)
+[  1184.908] (**) VirtualBox mouse integration: Applying InputClass "libinput pointer catchall"
+[  1184.908] (II) Using input driver 'libinput' for 'VirtualBox mouse integration'
+[  1184.909] (II) systemd-logind: got fd for /dev/input/event6 13:70 fd 26 paused 0
+[  1184.909] (**) VirtualBox mouse integration: always reports core events
+[  1184.909] (**) Option "Device" "/dev/input/event6"
+[  1184.910] (II) event6  - VirtualBox mouse integration: is tagged by udev as: Mouse
+[  1184.910] (II) event6  - VirtualBox mouse integration: device is a pointer
+[  1184.910] (II) event6  - VirtualBox mouse integration: device removed
+[  1184.910] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:04.0/input/input7/event6"
+[  1184.910] (II) XINPUT: Adding extended input device "VirtualBox mouse integration" (type: MOUSE, id 9)
+[  1184.910] (**) Option "AccelerationScheme" "none"
+[  1184.910] (**) VirtualBox mouse integration: (accel) selected scheme none/0
+[  1184.910] (**) VirtualBox mouse integration: (accel) acceleration factor: 2.000
+[  1184.910] (**) VirtualBox mouse integration: (accel) acceleration threshold: 4
+[  1184.911] (II) event6  - VirtualBox mouse integration: is tagged by udev as: Mouse
+[  1184.911] (II) event6  - VirtualBox mouse integration: device is a pointer
+[  1184.912] (II) config/udev: Adding input device VirtualBox mouse integration (/dev/input/js1)
+[  1184.912] (II) No input driver specified, ignoring this device.
+[  1184.912] (II) This device may have been added with another device file.
+[  1184.912] (II) config/udev: Adding input device VirtualBox mouse integration (/dev/input/mouse2)
+[  1184.912] (II) No input driver specified, ignoring this device.
+[  1184.912] (II) This device may have been added with another device file.
+[  1184.913] (II) config/udev: Adding input device VirtualBox USB Tablet (/dev/input/event2)
+[  1184.913] (**) VirtualBox USB Tablet: Applying InputClass "libinput pointer catchall"
+[  1184.913] (II) Using input driver 'libinput' for 'VirtualBox USB Tablet'
+[  1209.958] (EE) systemd-logind: failed to take device /dev/input/event2: Did not receive a reply. Possible causes include: the remote application did not send a reply, the message bus security policy blocked the reply, the reply timeout expired, or the network connection was broken.
+[  1209.959] (**) VirtualBox USB Tablet: always reports core events
+[  1209.959] (**) Option "Device" "/dev/input/event2"
+[  1209.960] (EE) xf86OpenSerial: Cannot open device /dev/input/event2
+	Permission denied.
+[  1209.960] (II) event2: opening input device '/dev/input/event2' failed (Permission denied).
+[  1209.961] (II) event2  - failed to create input device '/dev/input/event2'.
+[  1209.961] (EE) libinput: VirtualBox USB Tablet: Failed to create a device for /dev/input/event2
+[  1209.961] (EE) PreInit returned 2 for "VirtualBox USB Tablet"
+[  1209.961] (II) UnloadModule: "libinput"
+[  1209.965] (II) config/udev: Adding input device VirtualBox USB Tablet (/dev/input/js0)
+[  1209.965] (II) No input driver specified, ignoring this device.
+[  1209.965] (II) This device may have been added with another device file.
+[  1209.969] (II) config/udev: Adding input device VirtualBox USB Tablet (/dev/input/mouse0)
+[  1209.969] (II) No input driver specified, ignoring this device.
+[  1209.969] (II) This device may have been added with another device file.
+[  1209.971] (II) config/udev: Adding input device AT Translated Set 2 keyboard (/dev/input/event3)
+[  1209.972] (**) AT Translated Set 2 keyboard: Applying InputClass "libinput keyboard catchall"
+[  1209.972] (II) Using input driver 'libinput' for 'AT Translated Set 2 keyboard'
