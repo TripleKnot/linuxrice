@@ -22,6 +22,7 @@ Plug 'ap/vim-css-color'
 Plug 'morhetz/gruvbox'
 call plug#end()
 
+set notermguicolors
 set title
 set bg=dark
 set mouse=a
