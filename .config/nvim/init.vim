@@ -19,12 +19,12 @@ Plug 'vimwiki/vimwiki'
 Plug 'vim-airline/vim-airline'
 Plug 'tpope/vim-commentary'
 Plug 'ap/vim-css-color'
-Plug 'morhetz/gruvbox'
+" Plug 'morhetz/gruvbox'
 call plug#end()
 
 set notermguicolors
 set title
-set bg=dark
+set bg=light
 set mouse=a
 set nohlsearch
 set clipboard+=unnamedplus
@@ -35,7 +35,7 @@ set noshowcmd
 set hlsearch
 " set guicursor=n-v-c:ver25-blinkon1,i:ver25-blinkon1 " beam cursor
 " set guicursor=n-v-c:block-blinkon1,i:ver25-blinkon1 " bar cursor
-colorscheme gruvbox
+colorscheme vim
 
 " Some basics:
 	nnoremap c "_c
