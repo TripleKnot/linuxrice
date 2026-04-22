@@ -7,7 +7,7 @@ if ! filereadable(system('echo -n "${XDG_CONFIG_HOME:-$HOME/.config}/nvim/autolo
 	autocmd VimEnter * PlugInstall
 endif
 
-map ,, :keepp /<++><CR>ca<
+map ,, :keepp /f<CR>ca<
 imap ,, <esc>:keepp /<++><CR>ca<
 
 call plug#begin(system('echo -n "${XDG_CONFIG_HOME:-$HOME/.config}/nvim/plugged"'))
@@ -17,6 +17,7 @@ Plug 'junegunn/goyo.vim'
 Plug 'jreybert/vimagit'
 Plug 'vimwiki/vimwiki'
 Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-commentary'
 Plug 'ap/vim-css-color'
 " Plug 'morhetz/gruvbox'
@@ -24,17 +25,16 @@ call plug#end()
 
 set notermguicolors
 set title
-set bg=light
+set bg=dark
 set mouse=a
-set nohlsearch
+set hlsearch
+" set nohlsearch
 set clipboard+=unnamedplus
 set noshowmode
 set noruler
 set laststatus=0
 set noshowcmd
-set hlsearch
-" set guicursor=n-v-c:ver25-blinkon1,i:ver25-blinkon1 " beam cursor
-" set guicursor=n-v-c:block-blinkon1,i:ver25-blinkon1 " bar cursor
+
 colorscheme vim
 
 " Some basics:
@@ -50,7 +50,7 @@ colorscheme vim
 " Perform dot commands over visual blocks:
 	vnoremap . :normal .<CR>
 " Goyo plugin makes text more readable when writing prose:
-	map <leader>f :Goyo \| set bg=light \| set linebreak<CR>
+	map <leader>f :Goyo \| set bg=dark \| set linebreak<CR>
 " Spell-check set to <leader>o, 'o' for 'orthography':
 	map <leader>o :setlocal spell! spelllang=en_us<CR>
 " Splits open at the bottom and right, which is non-retarded, unlike vim defaults.
@@ -69,6 +69,7 @@ colorscheme vim
 	let g:airline_symbols.linenr = ' L:'
 	let g:airline_symbols.maxlinenr = ' '
 	let g:airline#extensions#whitespace#symbol = '!'
+"	let g:airline_theme='base16_gruvbox_dark_hard'
 
 " Shortcutting split navigation, saving a keypress:
 	map <C-h> <C-w>h
