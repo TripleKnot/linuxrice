@@ -13,10 +13,10 @@ ifinstalled pass pass-otp || exit 1
 
 dir="${PASSWORD_STORE_DIR}"
 
-choice="$({ echo "🆕add" ; echo "🕙sync-time" ; ls "$dir"/*-otp.gpg ;} | sed "s/.*\///;s/-otp.gpg//" | dmenu -p "Pick a 2FA:")"
+choice="$({ echo "add" ; echo "sync-time" ; ls "$dir"/*-otp.gpg ;} | sed "s/.*\///;s/-otp.gpg//" | dmenu -p "Pick a 2FA:")"
 
 case $choice in
-	🆕add )
+	add )
 		ifinstalled maim zbar || exit 1
 
 		temp=$(mktemp -p "$XDG_RUNTIME_DIR" --suffix=.png)
@@ -40,11 +40,11 @@ case $choice in
 			notify-send "No OTP data found." "Try to scan the image again more precisely."
 		fi
 		;;
-	🕙sync-time )
+	sync-time )
 		ifinstalled ntp || exit 1
-		notify-send -u low "🕙 Synchronizing Time..." "Synching time with remote NTP servers..."
+		notify-send -u low " Synchronizing Time..." "Synching time with remote NTP servers..."
 		updatedata="$(sudo ntpdate pool.ntp.org)" &&
-		notify-send -u low "🕙 Synchronizing Time..." "Done. Time changed by ${updatedata#*offset }"
+		notify-send -u low " Synchronizing Time..." "Done. Time changed by ${updatedata#*offset }"
 		;;
 	*) pass otp -c ${choice}-otp ;;
 esac
